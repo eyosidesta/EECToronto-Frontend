@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/EECToronto_logo.png'
 import {Link}  from 'react-router-dom'
 import HeaderTopbar from '../HeaderTopbar'
 import MobileMenu from '../../components/MobileMenu'
@@ -27,17 +27,17 @@ const Header = () => {
                     <nav>
                         <ul>
                             <li><Link className="active" to="/home" title="">Home</Link>
-                                <ul>
+                                {/* <ul>
                                     <li><Link className="active" to="/home">Home style 1</Link></li>
                                     <li><Link to="/home2">Home style 2</Link></li>
                                     <li><Link to="/home3">Home style 3</Link></li>
-                                </ul>
+                                </ul> */}
                             </li>
                             <li><Link to="/event" title="">Event</Link>
-                                <ul>
+                                {/* <ul>
                                     <li><Link to="/event" title="">Event</Link></li>
                                     <li><Link to="/event-details" title="">Event Single</Link></li>
-                                </ul>
+                                </ul> */}
                             </li>
                             <li><Link to="/about" title="">About</Link></li>
                             <li><Link to="/case" title="">Causes</Link>

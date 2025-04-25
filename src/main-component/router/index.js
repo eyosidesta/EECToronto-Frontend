@@ -30,8 +30,8 @@ const AllRoute = () => {
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Homepage />} />
-          <Route path='home' element={<Homepage />} />
           <Route path='home2' element={<Homepage2 />} />
+          <Route path='home' element={<Homepage />} />
           <Route path='home3' element={<Homepage3 />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='case' element={<CasePage />} />

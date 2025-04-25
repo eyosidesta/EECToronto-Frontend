@@ -18,7 +18,7 @@ const Contactpage = () => {
                             </div>
                             <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div className="contact-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.1705078127798!2d-79.24462522411294!3d43.81082254222243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d0d6868d480b%3A0xaebb7d9ed1092847!2s2275%20Markham%20Rd%2C%20Scarborough%2C%20ON%20M1B%202W3!5e0!3m2!1sen!2sca!4v1745537800664!5m2!1sen!2sca" title="Ethiopian Evangelical Church Toronto"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@ const Contactpage = () => {
                             <div className="row">
                                 <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div className="info-item">
-                                        <h2>25 North Street,Dubai</h2>
+                                        <h2>2275 Markham Rd, Scarborough</h2>
                                         <div className="info-wrap">
                                             <div className="info-icon">
                                                 <i className="ti-world"></i>

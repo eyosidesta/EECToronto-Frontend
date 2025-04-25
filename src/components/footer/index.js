@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link}  from 'react-router-dom'
-import Logo from '../../images/logo-2.png'
+import Logo from '../../images/EECToronto_logo.png'
 import Newsletter from '../Newsletter'
 import n1 from '../../images/footer/img-1.jpg'
 import n2 from '../../images/footer/img-2.jpg'

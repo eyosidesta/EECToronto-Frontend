@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import Header from '../../components/header'
-import Hero from '../../components/hero'
+import Hero2 from '../../components/hero2'
 import Mission from '../../components/mission'
 import About from '../../components/about'
 import CaseSlide from '../../components/case'
@@ -18,8 +18,8 @@ const HomePage =() => {
     return(
         <Fragment>
             <Header/>
-            <Hero/>
-            <Mission/>
+            <Hero2/>
+            <Mission subclass={'section-padding'}/>
             <About/>
             <CaseSlide/>
             <CounterSection/>

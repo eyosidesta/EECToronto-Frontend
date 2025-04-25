@@ -1,9 +1,22 @@
 import React from 'react'
 import './style.css'
+import defaultImage from '../../images/slider/img-1.jpg';
+
 
 const PageTitle = (props) => {
+    const backgroundImgStyle = {
+        background: props.imageUrl ? `url(${props.imageUrl}) no-repeat center top / cover` : `url(${defaultImage}) no-repeat center top / cover`,
+        minHeight: '350px',
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        zIndex: 1,
+  };
+
     return(
-        <div className="wpo-breadcumb-area">
+        <>
+        <div style={backgroundImgStyle}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -18,6 +31,7 @@ const PageTitle = (props) => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
