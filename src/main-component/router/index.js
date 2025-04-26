@@ -21,6 +21,8 @@ import ContactPage from '../ContactPage'
 import LoginPage from '../LoginPage'
 import SignUpPage from '../SignUpPage'
 import ForgotPassword from '../ForgotPassword'
+import LeadershipPage from '../LeadershipPage';
+import LeaderDetailPage from '../LeaderDetailPage';
 
 
 const AllRoute = () => {
@@ -34,6 +36,8 @@ const AllRoute = () => {
           <Route path='home' element={<Homepage />} />
           <Route path='home3' element={<Homepage3 />} />
           <Route path='about' element={<AboutPage />} />
+          <Route path="leadership" element={<LeadershipPage />} />
+          <Route path="leadership/:leaderId" element={<LeaderDetailPage />} />
           <Route path='case' element={<CasePage />} />
           <Route path='case-single' element={<CaseSinglePage />} />
           <Route path='event' element={<EventPage />} />

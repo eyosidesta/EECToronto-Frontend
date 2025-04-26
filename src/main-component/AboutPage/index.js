@@ -9,13 +9,14 @@ import CounterSection from '../../components/counter'
 import TeamSection from '../../components/team'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
+import imageUrl from '../../images/event/church_event_2.jpg';
 
 
 const CasePage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
+            <PageTitle pageTitle={'About Us'} pagesub={'About'} imageUrl={imageUrl}/> 
             <VedioCta/>
             <Mission subclass={'section-padding'}/>
             <About/>

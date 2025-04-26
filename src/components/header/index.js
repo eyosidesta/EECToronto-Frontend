@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Logo from '../../images/EECToronto_logo.png'
 import {Link}  from 'react-router-dom'
 import HeaderTopbar from '../HeaderTopbar'
@@ -12,6 +12,7 @@ const Header = () => {
         e.preventDefault()
      }
 
+    const [isOpen, setIsOpen] = useState(false);
     return(	
 	<div className="middle-header header-style-3">
         <HeaderTopbar/>
@@ -39,8 +40,17 @@ const Header = () => {
                                     <li><Link to="/event-details" title="">Event Single</Link></li>
                                 </ul> */}
                             </li>
-                            <li><Link to="/about" title="">About</Link></li>
-                            <li><Link to="/case" title="">Causes</Link>
+                            <li 
+                                onMouseEnter={() => setIsOpen(true)} 
+                                onMouseLeave={() => setIsOpen(false)}>
+                                    <Link to="/about" title="" onClick={() => setIsOpen(!isOpen)}>About Us<i className={`fa ${isOpen ? "fa-angle-up" : "fa-angle-down"}`} style={{marginLeft: '6px'}}></i></Link>
+                            {isOpen &&<ul style={{marginTop: '-40px'}}>
+                                    <li><Link to="/about" title="">Values and Vissions</Link></li>
+                                    <li><Link to="/leadership" title="">Leadership</Link></li>
+                                    <li><Link to="/volunteer" title="">Board of Members</Link></li>
+                                </ul>}
+                            </li>
+                            <li><Link to="/case" title="">Causes <></></Link>
                                 <ul>
                                     <li><Link to="/case" title="">Causes</Link></li>
                                     <li><Link to="/case-single" title="">Causes Single</Link></li>
@@ -60,7 +70,7 @@ const Header = () => {
                                     <li><Link to="/blog">Blog</Link></li>
                                     <li><Link to="/blog-left">Blog Left sidebar</Link></li>
                                     <li><Link to="/blog-fullwidth">Blog full width</Link></li>
-                                    <li><i className="fa fa-angle-right"></i><Link to="/blog-details" title="">Blog Details</Link>
+                                    <li><i className="fa fa-angle-right"></i><Link to="/blog-details" title="">Details</Link>
                                         <ul>
                                             <li><Link to="/blog-details" title="">Blog single</Link></li>
                                             <li><Link to="/blog-details-left" title="">Blog single Left sidebar</Link></li>

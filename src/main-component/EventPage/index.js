@@ -4,7 +4,7 @@ import PageTitle from '../../components/pagetitle'
 import EventSection2 from '../../components/event2'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
-import imageUrl from '../../images/slider/church_photo.jpg';
+import imageUrl from '../../images/event/church_event_1.jpg';
 
 
 const EventPage =() => {
