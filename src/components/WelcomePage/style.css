@@ -1,0 +1,76 @@
+.welcome-page {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 60px auto;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .welcome-text {
+    color: #284B3D;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.3;
+    flex: 1;
+  }
+  
+  .welcome-video {
+    flex-shrink: 0;
+  }
+  
+  .video-player {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ccc;
+  }
+  
+  /* Bottom banner image as background */
+  .bottom-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .bottom-banner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .welcome-text {
+        color: #284B3D;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  
+    .video-player {
+      width: 90vw;
+      height: 90vw;
+      max-width: 400px;
+      max-height: 400px;
+    }
+  }
+  

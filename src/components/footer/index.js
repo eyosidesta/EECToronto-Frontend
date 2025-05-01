@@ -7,6 +7,8 @@ import n2 from '../../images/footer/img-2.jpg'
 import './style.css'
 
 const Footer = (props) =>{
+    const today = new Date();
+    const year = today.getFullYear();
 
     const ClickHandler = () =>{
         window.scrollTo(10, 0);
@@ -21,7 +23,7 @@ const Footer = (props) =>{
                     <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                         <div className="widget about-widget">
                             <div className="logo widget-title">
-                                <img src={Logo} alt=""/>
+                                <Link onClick={ClickHandler} to="/home"><img src={Logo} alt=""/></Link>
                             </div>
                             <p>Build and Earn with your online store with lots of cool and exclusive wpo-features </p>
                             <ul>
@@ -93,7 +95,7 @@ const Footer = (props) =>{
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <p className="copyright">&copy; 2020 Nasarna. All rights reserved</p>
+                        <p className="copyright">&copy; {year} Ethiopian Evangelical Church Toronto</p>
                     </div>
                 </div>
             </div>

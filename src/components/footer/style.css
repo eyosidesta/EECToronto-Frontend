@@ -1,13 +1,13 @@
 .wpo-site-footer,
 .wpo-site-footer {
-    background: #062265;
+    background: #284B3D; /* 062265 - previous background color*/
     position: relative;
     font-size: 15px;
     overflow: hidden;
 }
 
 .wpo-ne-footer {
-    background: #062265;
+    background: #213640;
 }
 
 .wpo-site-footer-2 {
@@ -251,7 +251,7 @@
 .wpo-site-footer-2 .wpo-lower-footer {
     text-align: center;
     position: relative;
-    background: #011b58;
+    background: #284B3D;
 }
 
 .wpo-site-footer .wpo-lower-footer .row,
@@ -335,7 +335,7 @@
 .sticky-on {
     opacity: 1;
     top: 0;
-    background: #062265 !important;
+    background: #213640 !important;
 }
 
 .wpo-header-style-3 .sticky-on {

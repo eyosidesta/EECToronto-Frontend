@@ -13,10 +13,12 @@ const Header = () => {
      }
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpenMinistries, setIsOpenMinistries] = useState(false);
+    const [isOpenGetInvolved, setIsOpenGetInvolved] = useState(false);
     return(	
 	<div className="middle-header header-style-3">
         <HeaderTopbar/>
-        <div className="container">
+        <div className="container-header">
             <div className="header-content">
             <div className="row">
                 <div className="col-lg-3 col-md-4 col-sm-4 col-4">
@@ -27,13 +29,13 @@ const Header = () => {
                 <div className="col-lg-8 d-lg-block d-none">
                     <nav>
                         <ul>
-                            <li><Link className="active" to="/home" title="">Home</Link>
-                                {/* <ul>
+                           {/*  <li><Link className="active" to="/home" title="">Home</Link>
+                                <ul>
                                     <li><Link className="active" to="/home">Home style 1</Link></li>
                                     <li><Link to="/home2">Home style 2</Link></li>
                                     <li><Link to="/home3">Home style 3</Link></li>
-                                </ul> */}
-                            </li>
+                                </ul> 
+                            </li> */ }
                             <li><Link to="/event" title="">Event</Link>
                                 {/* <ul>
                                     <li><Link to="/event" title="">Event</Link></li>
@@ -44,28 +46,39 @@ const Header = () => {
                                 onMouseEnter={() => setIsOpen(true)} 
                                 onMouseLeave={() => setIsOpen(false)}>
                                     <Link to="/about" title="" onClick={() => setIsOpen(!isOpen)}>About Us<i className={`fa ${isOpen ? "fa-angle-up" : "fa-angle-down"}`} style={{marginLeft: '6px'}}></i></Link>
-                            {isOpen &&<ul style={{marginTop: '-40px'}}>
+                            {isOpen && <ul style={{marginTop: '-40px'}}>
                                     <li><Link to="/about" title="">Values and Vissions</Link></li>
                                     <li><Link to="/leadership" title="">Leadership</Link></li>
                                     <li><Link to="/volunteer" title="">Board of Members</Link></li>
                                 </ul>}
                             </li>
-                            <li><Link to="/case" title="">Causes <></></Link>
-                                <ul>
-                                    <li><Link to="/case" title="">Causes</Link></li>
-                                    <li><Link to="/case-single" title="">Causes Single</Link></li>
-                                </ul>
+                            <li><Link to="/case" title="">New Here <></></Link></li>
+                            <li><Link to="/english-service" title="">English Service<></></Link></li>
+                            <li onMouseEnter={() => setIsOpenMinistries(true)}
+                                    onMouseLeave={() => setIsOpenMinistries(false)}><Link to="/case" title=""
+                                    onClick={() => setIsOpenMinistries(!isOpenMinistries)}>Ministries <i className={`fa ${isOpenMinistries ? "fa-angle-up" : "fa-angle-down"}`} style={{marginLeft: '6px'}}></i></Link>
+                                {isOpenMinistries &&  <ul style={{marginTop: '-40px'}}>
+                                <li>
+                                    <Link to="/case" title="">Mission Garagama</Link></li>
+                                    <li><Link to="/case" title="">Youth - Amharic</Link></li>
+                                    <li><Link to="/case-single" title="">Kids Ministry </Link></li>
+                                    <li><Link to="/case-single" title="">Bible Study</Link></li>
+                                    <li><Link to="/case-single" title="">Media Team</Link></li>
+                                </ul>}
                             </li>
                             
-                            <li><Link to="/home" title="">Pages</Link>
-                                <ul>
-                                    <li><Link to="/about" title="">About</Link></li>
+                            <li
+                             onMouseEnter={() => setIsOpenGetInvolved(true)} 
+                             onMouseLeave={() => setIsOpenGetInvolved(false)}>
+                                <Link to="/home" title="" onClick={() => setIsOpenGetInvolved(!isOpenGetInvolved)}>Ministries <i className={`fa ${isOpenGetInvolved ? "fa-angle-up" : "fa-angle-down"}`} style={{marginLeft: '6px'}}></i></Link>
+                                {isOpenGetInvolved &&  <ul style={{marginTop: '-40px'}}>
+                                <li><Link to="/about" title="">About</Link></li>
                                     <li><Link to="/donate" title="">Donate</Link></li>
                                     <li><Link to="/volunteer" title="">Volunteer</Link></li>
                                     <li><Link to="/404" title="">Error 404</Link></li>
-                                </ul>
+                                </ul>}
                             </li>
-                            <li><Link to="/blog">Blog</Link>
+                            {/* <li><Link to="/blog">Blog</Link>
                                 <ul>
                                     <li><Link to="/blog">Blog</Link></li>
                                     <li><Link to="/blog-left">Blog Left sidebar</Link></li>
@@ -78,8 +91,8 @@ const Header = () => {
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            <li><Link to="/contact" title="">Contact</Link></li>
+                            </li> */}
+                            <li><Link to="/contact" title="">Contact Us</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -97,7 +110,7 @@ const Header = () => {
                                     </form>
                                 </div>
                             </div>
-                            <div className="mini-cart">
+                            {/* <div className="mini-cart">
                                 <button className="cart-toggle-btn"> <i className="fi flaticon-shopping-bag"></i> <span className="cart-count">02</span></button>
                                 <div className="mini-cart-content">
                                     <div className="mini-cart-items">
@@ -127,7 +140,7 @@ const Header = () => {
                                         <Link to="/home" className="view-cart-btn theme-btn">View Cart</Link>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
