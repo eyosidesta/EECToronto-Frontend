@@ -6,6 +6,8 @@ import WelcomePage from '../../components/WelcomePage';
 import EnglishServiceHeader from '../../components/EnglishServiceHeader';
 import EnglishServicePhoto from '../../components/EnglishServicePhoto';
 import EnglishServiceMnistry from '../../components/EnglishServiceMinistry';
+import EnglishServiceMore from '../../components/EnglishServiceMore';
+import EnglishServicePagePhoto from '../../components/EnglishServicePagePhoto';
 
 const EnglishServicePage = () => {
     return (
@@ -13,6 +15,8 @@ const EnglishServicePage = () => {
             <Header />
             <WelcomePage />
             <EnglishServiceHeader />
+            <EnglishServiceMore />
+            <EnglishServicePagePhoto />
             <EnglishServiceMnistry />
             <EnglishServicePhoto />
             <Footer />

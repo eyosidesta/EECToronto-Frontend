@@ -8,7 +8,7 @@ import PageHeader from '../../components/PageHeader';
 const LeadershipPage = () => {
     return (
         <Fragment>
-        <Header />
+        {/* <Header /> */}
         <PageHeader title='Leadership'/>
         <LeadersSection />
         <Footer />

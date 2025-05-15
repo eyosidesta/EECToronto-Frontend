@@ -1,0 +1,52 @@
+.young-adults-event-container {
+    padding-top: 90px;
+    padding-left: 80px;
+    background-color: #F5F5F5;
+    padding-bottom: 90px;
+}
+.young-adults-event-container h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.young-adults-event-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.yae-first-event-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.yae-first-event-card:hover {
+    transform: scale(1.05);
+}
+.yae-second-event-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.yae-second-event-card:hover {
+    transform: scale(1.05);
+}
+@media(max-width: 1199px) {
+    .young-adults-event-container {
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+}
+@media(max-width: 991px) {
+    .young-adults-event-container {
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    .young-adults-event-container {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}

@@ -24,6 +24,8 @@ import ForgotPassword from '../ForgotPassword'
 import LeadershipPage from '../LeadershipPage';
 import LeaderDetailPage from '../LeaderDetailPage';
 import EnglishServicePage from '../EnglishServicePage';
+import YoungAdultsPage from '../YoungAdultsPage';
+import YoungAdultsPageOld from '../YoungAdultsPageOld';
 
 
 const AllRoute = () => {
@@ -39,6 +41,8 @@ const AllRoute = () => {
           <Route path='about' element={<AboutPage />} />
           <Route path="leadership" element={<LeadershipPage />} />
           <Route path="english-service" element={<EnglishServicePage />} />
+          <Route path="young-adults-amharic" element={<YoungAdultsPage />} />
+          <Route path="young-adults-amharic-old" element={<YoungAdultsPageOld />} />
           <Route path="leadership/:leaderId" element={<LeaderDetailPage />} />
           <Route path='case' element={<CasePage />} />
           <Route path='case-single' element={<CaseSinglePage />} />

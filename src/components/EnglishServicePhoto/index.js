@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import background_image from '../../images/English_Service/toronto.jpg';
+import background_image from '../../images/English_Service/toronto_city.jpg';
 
 const EnglishServicePhoto = () => {
     return (

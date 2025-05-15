@@ -1,0 +1,52 @@
+.ministry-card {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.ministry-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ministry-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    background-color: #284B3D;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: #1f3a2f;
+}

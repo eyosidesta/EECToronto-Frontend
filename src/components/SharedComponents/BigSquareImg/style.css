@@ -1,0 +1,41 @@
+.big-square-container {
+    position: relative;
+    width: 554px;
+    height: 554px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.big-square-container:hover {
+    transform: scale(1.05);
+}
+.big-square-img {
+    border-radius: 3%;
+    overflow: hidden;
+}
+.big-square-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.big-square-content {
+    position: absolute;
+    top: 78%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.big-square-btn button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 0px;
+    font-size: 0.98rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: transform 0.3s ease;
+}
+.big-square-btn button:hover {
+    /* opacity: 80%; */
+    transform: scale(1.03);
+}

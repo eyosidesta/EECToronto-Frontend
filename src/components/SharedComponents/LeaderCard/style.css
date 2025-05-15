@@ -1,0 +1,29 @@
+.leader-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.leader-card-img {
+    width: 230px;
+    height: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.leader-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.leader-card-name {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.leader-card-detail {
+    font-size: 0.8rem;
+    max-width: 230px;
+}

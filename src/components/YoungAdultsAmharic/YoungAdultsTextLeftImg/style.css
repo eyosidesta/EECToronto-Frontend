@@ -1,0 +1,32 @@
+.young-text-left-img-container {
+    background-color: #F5F5F5;
+}
+.young-text-left-img-content {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.young-adult-welcome-text {
+    background-color: #434343;
+    padding: 100px 0;
+}
+.young-adult-welcome-text p,
+.young-adult-welcome-text div {
+    color: white;
+    padding: 0 200px;
+}
+.young-adult-welcome-text div {
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .young-text-left-img-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .young-adult-welcome-text p,
+    .young-adult-welcome-text div {
+        color: white;
+        padding: 0 40px;
+    }
+}

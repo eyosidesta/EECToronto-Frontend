@@ -9,12 +9,12 @@ const WelcomePage = () => {
     <div className="welcome-page">
       <div className="top-section">
         <div className="welcome-text">
-          Welcome to EECToronto Church English Service
+          Welcome to EECToronto English Service
         </div>
         <div className="welcome-video">
           <video
             className="video-player"
-            src="/videos/country_roads.mp4"
+            src="/videos/preaching_1.mp4"
             autoPlay
             muted
             loop
