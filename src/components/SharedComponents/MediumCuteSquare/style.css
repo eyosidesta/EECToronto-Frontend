@@ -1,0 +1,37 @@
+.medium-cute-square-container {
+    width: 300px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+.medium-cute-square-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.medium-cute-square-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.medium-cute-square-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.medium-cute-square-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.1;
+}
+.medium-cute-squre-detail-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}

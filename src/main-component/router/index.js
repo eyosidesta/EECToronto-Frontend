@@ -26,6 +26,11 @@ import LeaderDetailPage from '../LeaderDetailPage';
 import EnglishServicePage from '../EnglishServicePage';
 import YoungAdultsPage from '../YoungAdultsPage';
 import YoungAdultsPageOld from '../YoungAdultsPageOld';
+import EnglishSermonSeries from '../../components/EnglishServiceComponent/EnglishSermonSeries';
+import AllEnglishSermons from '../AllEnglishSermons';
+import SingleSermon from '../SingleSermon';
+import AllEventsPage from '../AllEventsPage';
+import EventDetailPage from '../EventDetailPage';
 
 
 const AllRoute = () => {
@@ -41,9 +46,14 @@ const AllRoute = () => {
           <Route path='about' element={<AboutPage />} />
           <Route path="leadership" element={<LeadershipPage />} />
           <Route path="english-service" element={<EnglishServicePage />} />
+          <Route path="english-sermon-series" element={<EnglishSermonSeries />} />
+          <Route path="all-english-sermons" element={<AllEnglishSermons />} />
+          <Route path="sermon/*" element={<SingleSermon />} />
           <Route path="young-adults-amharic" element={<YoungAdultsPage />} />
           <Route path="young-adults-amharic-old" element={<YoungAdultsPageOld />} />
           <Route path="leadership/:leaderId" element={<LeaderDetailPage />} />
+          <Route path="all-events" element={<AllEventsPage />} />
+          <Route path="all-events/:eventId" element={<EventDetailPage />} />
           <Route path='case' element={<CasePage />} />
           <Route path='case-single' element={<CaseSinglePage />} />
           <Route path='event' element={<EventPage />} />

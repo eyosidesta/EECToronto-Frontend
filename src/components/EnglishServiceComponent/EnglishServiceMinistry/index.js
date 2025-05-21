@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.css';
-import card_img from '../../images/event/church_event_2.jpg';
-import card_img2 from '../../images/event/church_event_1.jpg'
-import CardTextButtonBig from '../SharedComponents/CardTextButtonBig';
+import card_img from '../../../images/event/church_event_2.jpg';
+import card_img2 from '../../../images/event/church_event_1.jpg'
+import CardTextButtonBig from '../../SharedComponents/CardTextButtonBig';
 
 const EnglishServiceMnistry = () => {
     return (

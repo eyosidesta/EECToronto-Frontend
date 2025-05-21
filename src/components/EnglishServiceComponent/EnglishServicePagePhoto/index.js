@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundPhoto from '../../images/English_Service/page_photo.png';
+import backgroundPhoto from '../../../images/English_Service/page_photo.png';
 import './style.css';
 
 const EnglishServicePagePhoto = () => {

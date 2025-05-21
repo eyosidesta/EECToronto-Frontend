@@ -3,11 +3,11 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import ScrollBar from 'react-perfect-scrollbar';
 import WelcomePage from '../../components/WelcomePage';
-import EnglishServiceHeader from '../../components/EnglishServiceHeader';
-import EnglishServicePhoto from '../../components/EnglishServicePhoto';
-import EnglishServiceMnistry from '../../components/EnglishServiceMinistry';
-import EnglishServiceMore from '../../components/EnglishServiceMore';
-import EnglishServicePagePhoto from '../../components/EnglishServicePagePhoto';
+import EnglishServiceHeader from '../../components/EnglishServiceComponent/EnglishServiceHeader';
+import EnglishServicePhoto from '../../components/EnglishServiceComponent/EnglishServicePhoto';
+import EnglishServiceMore from '../../components/EnglishServiceComponent/EnglishServiceMore';
+import EnglishServicePagePhoto from '../../components/EnglishServiceComponent/EnglishServicePagePhoto';
+import EnglishServiceMnistry from '../../components/EnglishServiceComponent/EnglishServiceMinistry';
 
 const EnglishServicePage = () => {
     return (

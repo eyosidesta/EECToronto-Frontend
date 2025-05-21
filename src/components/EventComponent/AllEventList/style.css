@@ -1,0 +1,14 @@
+.all-event-list-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 2rem;
+}
+.individual-all-event-list {
+    transition: transform 0.3s ease;
+}
+.individual-all-event-list:hover {
+    transform:  scale(1.05);
+}

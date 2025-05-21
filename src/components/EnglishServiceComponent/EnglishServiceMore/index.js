@@ -1,5 +1,5 @@
 import React from 'react';
-import sample from '../../images/event/church_event_1.jpg';
+import sample from '../../../images/event/church_event_1.jpg';
 import './style.css';
 
 const EnglishServiceMore = () => {
@@ -25,7 +25,7 @@ const EnglishServiceMore = () => {
                     <div className='more-video'>
                         <video width='100%' height='100%' poster={sample} controls>
                             <source src="/videos/preaching_1.mp4" type="video/mp4" />
-                            Your browser doesn't support the video tag.
+                            Preaching Video
                         </video>
                     </div>
                 </div>

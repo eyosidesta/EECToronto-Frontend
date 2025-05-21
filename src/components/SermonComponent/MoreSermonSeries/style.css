@@ -1,0 +1,39 @@
+.more-sermon-series-wrapper {
+    padding-top: 40px;
+    padding-left: 40px
+}
+.more-sermon-series-top-title {
+    padding-bottom: 40px;
+}
+.more-sermon-series-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+.more-sermon-series-link {
+  display: inline-block;
+  min-width: 143px;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid rgba(38, 128, 170, 1);
+  border-radius: 9999px;
+  background-color: rgba(38, 128, 170, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.more-sermon-series-link:hover {
+    background-color: white;
+    color: rgba(38, 128, 170, 1);
+    border-color: rgba(38, 128, 170, 1);
+  }

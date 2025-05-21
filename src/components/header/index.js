@@ -25,7 +25,7 @@ const Header = () => {
 
                 <nav className={`header-right ${mobileMenuOpen ? 'active' : ''}`}>
                     <ul className="nav-menu">
-                        <li><Link to="/event">Event</Link></li>
+                        <li><Link to="/all-events">Event</Link></li>
 
                         <li
                             onMouseEnter={() => !mobileMenuOpen && setIsOpen(true)}

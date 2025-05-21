@@ -1,14 +1,14 @@
 import React from 'react';
 import './style.css';
-import headerImg from '../../images/event/church_event_1.jpg';
+import headerImg from '../../../images/event/church_event_1.jpg';
 import { Link } from 'react-router-dom';
 
 const EnglishServiceHeader = () => {
     return (
         <div className='header-container'>
             <nav className='nav-links'>
-                <Link to="/event">Events</Link>
-                <Link to="/event">Service Time</Link>
+                <Link to="/all-events">Events</Link>
+                <Link to="/english-sermon-series">Watch Sermons</Link>
                 <Link to="/event">Accept Christ</Link>
                 <Link to="/event">Contact Us</Link>
             </nav>
