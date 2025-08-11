@@ -34,7 +34,7 @@ const EventSection = (props) => {
                                 </div>
                             </div>
                             <div className="wpo-event-text">
-                                <h2>Education for All Children</h2>
+                                <h2>Confrence</h2>
                                 <ul>
                                     <li><i className="fa fa-clock-o" aria-hidden="true"></i>8.00 - 5.00</li>
                                     <li><i className="fi flaticon-pin"></i>Newyork City</li>
@@ -54,7 +54,7 @@ const EventSection = (props) => {
                                 </div>
                             </div>
                             <div className="wpo-event-text">
-                                <h2>Food for All Everyone</h2>
+                                <h2>Annual Mothers Day</h2>
                                 <ul>
                                     <li><i className="fa fa-clock-o" aria-hidden="true"></i>8.00 - 5.00</li>
                                     <li><i className="fi flaticon-pin"></i>Newyork City</li>
@@ -74,7 +74,7 @@ const EventSection = (props) => {
                                 </div>
                             </div>
                             <div className="wpo-event-text">
-                                <h2>Free Treatment </h2>
+                                <h2>English Service </h2>
                                 <ul>
                                     <li><i className="fa fa-clock-o" aria-hidden="true"></i>8.00 - 5.00</li>
                                     <li><i className="fi flaticon-pin"></i>Newyork City</li>

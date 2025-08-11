@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Header from '../../components/header';
 import LeadersSection from '../../components/Leaders';
 import Footer from '../../components/footer';
 import ScrollBar from 'react-perfect-scrollbar';

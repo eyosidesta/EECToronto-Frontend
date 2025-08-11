@@ -12,8 +12,8 @@ const TeamSection = (props) => {
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <span>Meet Our Team</span>
-                            <h2>Our Expert Volunteer</h2>
+                            <span>Join Young Adults Amharic Team</span>
+                            <h2>See What's God is working within us</h2>
                         </div>
                     </div>
                 </div>

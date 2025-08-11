@@ -11,34 +11,77 @@ const HeaderTopbar = () => {
         }, 1000);
     }, [])
 
+    // function getTimeUnitNextSunday() {
+    //     const now = new Date();
+    //     const day = now.getDate();
+    //     const hours = now.getHours();
+    //     const minutes = now.getMinutes();
+    //     const seconds = now.getSeconds();
+
+    //     let dayUntilSunday = (7 - day) % 7;
+    //     if (day === 0 && (hours < 10 || (hours === 10 && (minutes < 0 || seconds < 0)))) {
+    //         dayUntilSunday = 0;
+    //     } else if (day === 0) {
+    //         dayUntilSunday = 7;
+    //     }
+
+    //     const nextSunday = new Date(
+    //         now.getFullYear(),
+    //         now.getMonth(),
+    //         now.getDate() + dayUntilSunday,
+    //         10, 0, 0
+    //     );
+
+    //     const totalSeconds = Math.floor((nextSunday - now) / 1000);
+
+    //     const days = Math.floor(totalSeconds / (60 * 60 * 24));
+    //     const hoursLeft = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+    //     const minutesLeft = Math.floor((totalSeconds % (60 * 60)) / 60);
+    //     const secondsLeft = totalSeconds % 60;
+
+    //     return {
+    //         days,
+    //         hours: hoursLeft,
+    //         minutes: minutesLeft,
+    //         seconds: secondsLeft
+    //     };
+    // }
+
+    // useEffect(() => {
+    //     const timer = setInterval(() => {
+    //         setTimeLeft(getTimeUnitNextSunday());
+    //     }, 1000);
+    //     return () => clearInterval(timer);
+    // }, []);
+
+    
     function getTimeUnitNextSunday() {
         const now = new Date();
-        const day = now.getDate();
-        const hours = now.getHours();
-        const minutes = now.getMinutes();
-        const seconds = now.getSeconds();
-
-        let dayUntilSunday = (7 - day) % 7;
-        if (day === 0 && (hours < 10 || (hours === 10 && (minutes < 0 || seconds < 0)))) {
-            dayUntilSunday = 0;
-        } else if (day === 0) {
-            dayUntilSunday = 7;
+        const dayOfWeek = now.getDay(); // 0 (Sun) to 6 (Sat)
+    
+        // How many days until next Sunday
+        let daysUntilSunday = (7 - dayOfWeek) % 7;
+        // If today is Sunday and before 10:00 AM, count today as the next service
+        if (dayOfWeek === 0 && now.getHours() < 10) {
+            daysUntilSunday = 0;
+        } else if (dayOfWeek === 0) {
+            daysUntilSunday = 7;
         }
-
+    
         const nextSunday = new Date(
             now.getFullYear(),
             now.getMonth(),
-            now.getDate() + dayUntilSunday,
-            10, 0, 0
+            now.getDate() + daysUntilSunday,
+            10, 0, 0 // 10:00 AM
         );
-
-        const totalSeconds = Math.floor((nextSunday - now) / 1000);
-
+    
+        const totalSeconds = Math.max(0, Math.floor((nextSunday - now) / 1000)); // prevent negative
+    
         const days = Math.floor(totalSeconds / (60 * 60 * 24));
         const hoursLeft = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
         const minutesLeft = Math.floor((totalSeconds % (60 * 60)) / 60);
         const secondsLeft = totalSeconds % 60;
-
+    
         return {
             days,
             hours: hoursLeft,
@@ -46,46 +89,22 @@ const HeaderTopbar = () => {
             seconds: secondsLeft
         };
     }
+    
     return(	
-        // <div className="header-topbar">
-        //     <div className="container">
-        //         <div className="row">
-        //             <div className="col col-md-6 col-sm-12 col-12">
-        //                 <div className="contact-intro">
-        //                     <ul>
-        //                         <li><i className="fi flaticon-call"></i>+000123456789</li>
-        //                         <li><i className="fi flaticon-envelope"></i> Live in 01:12:02:21</li>
-        //                     </ul>
-        //                 </div>
-        //             </div>
-        //             <div className="col col-md-6 col-sm-12 col-12">
-        //                 <div className="contact-info">
-        //                     <ul>
-        //                         <li><Link to="/login">Login</Link></li>
-        //                         <li><Link to="/signup">Sign Up</Link></li>
-        //                         <li><Link className="theme-btn" to="/donate">Donate Now</Link></li>
-        //                     </ul>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
         <div className='header-topbar'>
             <div className='live-in'>
                 <div className='live-text'>LIVE IN</div>
-                <div className='live-time'>0{`${timeLeft.days} : ${pad(timeLeft.hours)} : ${pad(timeLeft.minutes)} : ${pad(timeLeft.seconds)}`}</div>
+                <div className='live-time'>{`${timeLeft.days} : ${pad(timeLeft.hours)} : ${pad(timeLeft.minutes)} : ${pad(timeLeft.seconds)}`}</div>
             </div>
-            {/* <div className='top-nav-bars'> */}
                 <nav className='top-nav-bars'>
                     <ul className='top-list-items'>
                         <li><Link to="/prayer">Prayer</Link></li>
                         <li><Link to="/donate">Give</Link></li>
-                        <li><Link to="/prayer">Accept Christ</Link></li>
-                        <li><Link to="/prayer">Discipleship</Link></li>
+                        <li><Link to="/accept-christ">Accept Christ</Link></li>
+                        <li><Link to="/discipleship">Discipleship</Link></li>
 
                     </ul>
                 </nav>
-            {/* </div> */}
         </div>
     )
 }

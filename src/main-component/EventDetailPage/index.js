@@ -1,11 +1,13 @@
-import React from 'react';
-import './style.css';
+import React, { Fragment } from 'react';
+import PageHeader from '../../components/PageHeader';
+import EventDetail from '../../components/EventComponent/EventDetail';
 
 const EventDetailPage = () => {
     return (
-        <div>
-            working
-        </div>
+        <Fragment>
+            <PageHeader title="Event" />
+            <EventDetail />
+        </Fragment>
     )
 }
 export default EventDetailPage;

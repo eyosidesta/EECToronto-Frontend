@@ -17,8 +17,8 @@ const BlogSection = (props) => {
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <span>Our Blog</span>
-                            <h2>Latest News</h2>
+                            <span>God's Mission</span>
+                            <h2>Mission Garagama</h2>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const BlogSection = (props) => {
                             </div>
                             <div className="wpo-blog-content">
                                 <span>Nov 24, 2020</span>
-                                <h2><Link onClick={ClickHandler} to="/Blog"> Help The Helpless</Link></h2>
+                                <h2><Link onClick={ClickHandler} to="/Blog"> Preach Gosple</Link></h2>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const BlogSection = (props) => {
                             </div>
                             <div className="wpo-blog-content">
                                 <span>Nov 24, 2020</span>
-                                <h2><Link onClick={ClickHandler} to="/Blog"> Help The Helpless</Link></h2>
+                                <h2><Link onClick={ClickHandler} to="/Blog"> Have a Fellowship</Link></h2>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ const Mission = (props) => {
                     <div className="col-12">
                         <div className="wpo-section-title">
                             <span>What We Do?</span>
-                            <h2>We Are In A Mission To Help The Helpless</h2>
+                            <h2>We Are In A Mission To Win souls for Jesus Christ</h2>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ const Mission = (props) => {
                                     <img src={ms1} alt=""/>
                                 </div>
                                 <div className="wpo-mission-content">
-                                    <h2>Clean Water</h2>
+                                    <h2>Mission</h2>
                                     <p>Lorem ipsum dolor amet cosectetur adipiscing, sed do eiusmod.</p>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ const Mission = (props) => {
                                     <img src={ms2} alt=""/>
                                 </div>
                                 <div className="wpo-mission-content">
-                                    <h2>Healthy Food</h2>
+                                    <h2>Worship</h2>
                                     <p>Lorem ipsum dolor amet cosectetur adipiscing, sed do eiusmod.</p>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ const Mission = (props) => {
                                     <img src={ms3} alt=""/>
                                 </div>
                                 <div className="wpo-mission-content">
-                                    <h2>Pure Education</h2>
+                                    <h2>Discipleship</h2>
                                     <p>Lorem ipsum dolor amet cosectetur adipiscing, sed do eiusmod.</p>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ const Mission = (props) => {
                                     <img src={ms4} alt=""/>
                                 </div>
                                 <div className="wpo-mission-content">
-                                    <h2>Medical Facilities</h2>
+                                    <h2>Fellowship</h2>
                                     <p>Lorem ipsum dolor amet cosectetur adipiscing, sed do eiusmod.</p>
                                 </div>
                             </div>

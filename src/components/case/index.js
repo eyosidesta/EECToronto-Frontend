@@ -67,7 +67,7 @@ class CaseSlide extends Component {
                       <div className="col-12">
                           <div className="wpo-section-title">
                               <span>Our Causes</span>
-                              <h2>Popular Causes What You Should Know</h2>
+                              <h2>To Make known our blessed Saviour and Lord Jesus Christ</h2>
                           </div>
                       </div>
                   </div>
@@ -81,7 +81,7 @@ class CaseSlide extends Component {
                                     </div>
                                     <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
-                                            <h2>Ensure Education for every poor children</h2>
+                                            <h2>Preach The Gosple for every tribe</h2>
                                             <div className="progress-section">
                                                 <div className="process">
                                                     <div className="progress">
@@ -112,7 +112,7 @@ class CaseSlide extends Component {
                                     </div>
                                     <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
-                                            <h2>Supply drinking water for the people</h2>
+                                            <h2>Fellowship with brothers and sisters in Christ</h2>
                                             <div className="progress-section">
                                                 <div className="process">
                                                     <div className="progress">
@@ -143,7 +143,7 @@ class CaseSlide extends Component {
                                     </div>
                                     <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
-                                            <h2>Providing Healthy Food for the children</h2>
+                                            <h2>Worship God With Brothers and Sisters</h2>
                                             <div className="progress-section">
                                                 <div className="process">
                                                     <div className="progress">
@@ -174,7 +174,7 @@ class CaseSlide extends Component {
                                     </div>
                                     <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
-                                            <h2>Ensure Education for every poor children</h2>
+                                            <h2>Preach The Gosple for every tribe</h2>
                                             <div className="progress-section">
                                                 <div className="process">
                                                     <div className="progress">

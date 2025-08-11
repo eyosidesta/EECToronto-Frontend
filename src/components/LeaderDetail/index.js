@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import img from '../../images/leadership/church_worship_18.jpg';
+import { Link } from 'react-router-dom';
 
 const LeaderDetail = (props) => {
     return (
@@ -15,7 +16,7 @@ const LeaderDetail = (props) => {
                     <div>Email Icon</div>
                     <div>Phone Icon</div>
                 </div>
-                <button className="back-button">Back</button>
+                <Link to="/leadership" className="back-button">Back</Link>
             </div>
         </div>
     );

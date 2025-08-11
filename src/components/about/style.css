@@ -22,10 +22,10 @@
 }
 
 .wpo-about-img-3 {
-    width: 165%;
+    width: 100%;
     position: relative;
-    right: -34px;
-    top: -25px;
+    /* right: -34px;
+    top: -25px; */
 }
 
 @media(max-width: 1200px) {

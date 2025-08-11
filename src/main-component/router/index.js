@@ -31,6 +31,11 @@ import AllEnglishSermons from '../AllEnglishSermons';
 import SingleSermon from '../SingleSermon';
 import AllEventsPage from '../AllEventsPage';
 import EventDetailPage from '../EventDetailPage';
+import AcceptChristPage from '../AcceptChristPage';
+import PrayerPage from '../PrayerPage';
+import DiscipleshipPage from '../DiscipleshipPage';
+import StatementOfFaithPage from '../StatementOfFaithPage';
+import BibleStudyPage from '../BibleStudyPage';
 
 
 const AllRoute = () => {
@@ -54,6 +59,12 @@ const AllRoute = () => {
           <Route path="leadership/:leaderId" element={<LeaderDetailPage />} />
           <Route path="all-events" element={<AllEventsPage />} />
           <Route path="all-events/:eventId" element={<EventDetailPage />} />
+          <Route path="accept-christ" element={<AcceptChristPage />} />
+          <Route path="prayer" element={<PrayerPage />} />
+          <Route path="discipleship" element={<DiscipleshipPage />} />
+          <Route path="statement-of-faith" element={<StatementOfFaithPage />} />
+          <Route path="bible-study" element={<BibleStudyPage />} />
+
           <Route path='case' element={<CasePage />} />
           <Route path='case-single' element={<CaseSinglePage />} />
           <Route path='event' element={<EventPage />} />

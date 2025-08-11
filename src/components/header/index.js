@@ -36,7 +36,7 @@ const Header = () => {
                             </Link>
                             {(isOpen || mobileMenuOpen) && (
                                 <ul className="dropdown">
-                                    <li><Link to="/about">Values and Visions</Link></li>
+                                    <li><Link to="/statement-of-faith">Values and Visions</Link></li>
                                     <li><Link to="/leadership">Leadership</Link></li>
                                     <li><Link to="/volunteer">Board of Members</Link></li>
                                 </ul>
@@ -59,7 +59,7 @@ const Header = () => {
                                     <li><Link to="/young-adults-amharic">Young Adults - Amharic</Link></li>
                                     <li><Link to="/young-adults-amharic-old">Young Adults - Amharic - Old</Link></li>
                                     <li><Link to="/case-single">Kids Ministry</Link></li>
-                                    <li><Link to="/case-single">Bible Study</Link></li>
+                                    <li><Link to="/bible-study">Bible Study</Link></li>
                                     <li><Link to="/case-single">Media Team</Link></li>
                                 </ul>
                             )}

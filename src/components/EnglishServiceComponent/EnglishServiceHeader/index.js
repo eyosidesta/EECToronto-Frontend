@@ -9,7 +9,7 @@ const EnglishServiceHeader = () => {
             <nav className='nav-links'>
                 <Link to="/all-events">Events</Link>
                 <Link to="/english-sermon-series">Watch Sermons</Link>
-                <Link to="/event">Accept Christ</Link>
+                <Link to="/accept-christ">Accept Christ</Link>
                 <Link to="/event">Contact Us</Link>
             </nav>
 

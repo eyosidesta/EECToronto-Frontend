@@ -47,7 +47,7 @@ const Header = () => {
                                 onMouseLeave={() => setIsOpen(false)}>
                                     <Link to="/about" title="" onClick={() => setIsOpen(!isOpen)}>About Us<i className={`fa ${isOpen ? "fa-angle-up" : "fa-angle-down"}`} style={{marginLeft: '6px'}}></i></Link>
                             {isOpen && <ul style={{marginTop: '-40px'}}>
-                                    <li><Link to="/about" title="">Values and Vissions</Link></li>
+                                    <li><Link to="/statment-of-faith" title="">Values and Vissions</Link></li>
                                     <li><Link to="/leadership" title="">Leadership</Link></li>
                                     <li><Link to="/volunteer" title="">Board of Members</Link></li>
                                 </ul>}

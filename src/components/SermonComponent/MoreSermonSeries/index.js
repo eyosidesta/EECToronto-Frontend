@@ -10,21 +10,21 @@ const MoreSermonSeries = () => {
     const more_series = [
         {
             image: image,
-            title: "God is Good",
-            person: "Pastor Ephraim",
-            date: "Jul 09, 2025",
+            title: "2024 Sermons",
+            person: "EECToronto",
+            date: "2024",
         },
         {
             image: image2,
-            title: "Jesus is Lord",
-            person: "Pastor Yonathan",
-            date: "Aug 23, 2025",
+            title: "2025 Sermons",
+            person: "EECToronto",
+            date: "2025",
         },
         {
             image: image,
-            title: "Time to Repent",
-            person: "Pastor Jonathan",
-            date: "Sep 19, 2025",
+            title: "English Sermons",
+            person: "EECToronto",
+            date: "2025",
         },
     ]
     return (
@@ -37,7 +37,7 @@ const MoreSermonSeries = () => {
                     {more_series.map((series, index) => {
                         return (
                             <div>
-                                <CuteSquare square_img={series.image} title={series.title} person={series.person} />
+                                {/* <CuteSquare square_img={series.image} title={series.title} person={series.person} /> */}
                                 <MediumCuteSquare image={series.image} title={series.title} person={series.person} date={series.date} />
 
                             </div>

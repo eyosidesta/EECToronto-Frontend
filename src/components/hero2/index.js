@@ -15,8 +15,8 @@ const Hero2 = (props) => {
                                     <h2>Jesus is Lord <span>come to Him</span></h2>
                                 </div>
                                 <div className="slide-subtitle">
-                                    <p>Give your life to Jesus.</p>
-                                    <p>You will have eternal life with Him.</p>
+                                    <p>Our Weekly Service</p>
+                                    <p>Sunday, 10 AM - 1 PM, 2275 Markham Rd, Toronto</p>
                                 </div>
                                 <div className="btns">
                                     <Link to="/donate" className="theme-btn">Donate Now</Link>

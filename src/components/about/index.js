@@ -1,5 +1,6 @@
 import React from 'react'
 import abimg from '../../images/about3.png'
+import image from '../../images/event/church_event_4.jpg'
 import VideoModal from '../ModalVideo'
 import './style.css'
 
@@ -15,7 +16,7 @@ const About = (props) => {
                         <div className="wpo-about-text">
                             <div className="wpo-section-title">
                                 <span>What We Do?</span>
-                                <h2>We Are In A Mission To Help The Helpless</h2>
+                                <h2>We Are In A Mission To Win souls for Jesus Christ</h2>
                             </div>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.</p>
                             <p>Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, </p>
@@ -34,7 +35,7 @@ const About = (props) => {
                     </div>
                     <div className="col-lg-6 col-md-12 colsm-12">
                         <div className="wpo-about-img-3">
-                            <img src={abimg} alt=""/>
+                            <img src={image} alt=""/>
                         </div>
                     </div>
                 </div>
