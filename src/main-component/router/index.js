@@ -36,6 +36,10 @@ import PrayerPage from '../PrayerPage';
 import DiscipleshipPage from '../DiscipleshipPage';
 import StatementOfFaithPage from '../StatementOfFaithPage';
 import BibleStudyPage from '../BibleStudyPage';
+import NewHerePage from '../NewHerePage';
+import BoardOfMembersPage from '../BoardOfMembersPage';
+import AllSermons from '../AllSermons';
+import AllSermonSeries from '../AllSermonSeries';
 
 
 const AllRoute = () => {
@@ -50,6 +54,8 @@ const AllRoute = () => {
           <Route path='home3' element={<Homepage3 />} />
           <Route path='about' element={<AboutPage />} />
           <Route path="leadership" element={<LeadershipPage />} />
+          <Route path="all-sermons" element={<AllSermons />} />
+          <Route path="all-sermon-series" element={<AllSermonSeries />} />
           <Route path="english-service" element={<EnglishServicePage />} />
           <Route path="english-sermon-series" element={<EnglishSermonSeries />} />
           <Route path="all-english-sermons" element={<AllEnglishSermons />} />
@@ -60,6 +66,8 @@ const AllRoute = () => {
           <Route path="all-events" element={<AllEventsPage />} />
           <Route path="all-events/:eventId" element={<EventDetailPage />} />
           <Route path="accept-christ" element={<AcceptChristPage />} />
+          <Route path="new-here" element={< NewHerePage/>} />
+          <Route path="board-of-members" element={<BoardOfMembersPage />} />
           <Route path="prayer" element={<PrayerPage />} />
           <Route path="discipleship" element={<DiscipleshipPage />} />
           <Route path="statement-of-faith" element={<StatementOfFaithPage />} />

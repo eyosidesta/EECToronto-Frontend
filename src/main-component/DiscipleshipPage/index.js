@@ -5,7 +5,7 @@ import DiscipleshipDetail from '../../components/DiscipleshipComponent/Disciples
 const DiscipleshipPage = () => {
     return (
         <Fragment>
-            <PageHeader title="Discipleship" />
+            <PageHeader title="Get Involved" />
             <DiscipleshipDetail />
         </Fragment>
     )

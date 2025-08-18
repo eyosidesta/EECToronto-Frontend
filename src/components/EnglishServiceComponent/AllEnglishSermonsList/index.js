@@ -4,13 +4,13 @@ import image from '../../../images/English_Service/joy.jpg';
 import image2 from "../../../images/event/church_event_1.jpg"
 import MediumCuteSquare from '../../SharedComponents/MediumCuteSquare';
 
-const AllEnglishSemonsList = () => {
+const AllEnglishSermonsList = () => {
     const all_series = [
         {
             id: 1,
             image: image,
             title: "God is Good",
-            person: "Pastor Ephraim",
+            person: "Pastor Fitsum",
             date: "Jul 09, 2025",
         },
         {
@@ -32,7 +32,7 @@ const AllEnglishSemonsList = () => {
             id: 4,
             image: image,
             title: "God is Good",
-            person: "Pastor Ephraim",
+            person: "Pastor Fitsum",
             date: "Jul 09, 2025",
         },
         {
@@ -53,7 +53,7 @@ const AllEnglishSemonsList = () => {
             id: 7,
             image: image,
             title: "God is Good",
-            person: "Pastor Ephraim",
+            person: "Pastor Fitsum",
             date: "Jul 09, 2025",
         },
         {
@@ -81,7 +81,7 @@ const AllEnglishSemonsList = () => {
     return (
         <div className='all-english-sermons-list-wrapper'>
             <div className='all-english-sermons-list-container'>
-            <div className='all-sermon-series-content'>
+            <div className='all-english-sermon-list-series-content'>
                     {all_series.map((series, index) => {
                         return (
                             <div key={index} onClick={() => handleSermonClick(series.id)}>
@@ -96,4 +96,4 @@ const AllEnglishSemonsList = () => {
         </div>
     )
 }
-export default AllEnglishSemonsList;
+export default AllEnglishSermonsList;

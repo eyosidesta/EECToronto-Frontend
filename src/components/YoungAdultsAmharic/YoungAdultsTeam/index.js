@@ -1,6 +1,6 @@
 import React from 'react';
 import LeaderCard from '../../SharedComponents/LeaderCard';
-import image from '../../../images/leadership/church_worship_18.jpg';
+import image from '../../../images/leadership/Pastor_GEEC.jpg';
 import square_img from '../../../images/English_Service/joy.jpg';
 import StoryCard from '../../SharedComponents/StoryCard';
 import LeftCircleImg from '../../SharedComponents/LeftCircleImg';
@@ -11,7 +11,7 @@ import SquareDots from '../../SharedComponents/SquareDots';
 import young_adults_1 from '../../../images/Young_Adults/young_adults_1.jpg'
 
 import PhotoTitle from '../../SharedComponents/PhotoTitle';
-import bckgrnd_pht from '../../../images/event/events_5.png';
+import bckgrnd_pht from '../../../images/church_images/geec_young_adults_1.jpg';
 import YoungAdultsTextLeftImg from '../YoungAdultsTextLeftImg';
 import './style.css';
 import YoungAdultsEvents from '../YoungAdultsEvents';

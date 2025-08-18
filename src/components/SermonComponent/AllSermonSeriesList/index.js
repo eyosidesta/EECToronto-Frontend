@@ -3,7 +3,7 @@ import sample from '../../../images/event/church_event_1.jpg';
 import ReactPlayer from 'react-player';
 import './style.css';
 
-const SermonSeries = () => {
+const AllSermonSeriesList = () => {
     return (
         <div className="sermon-series-wrapper">
             <div className="sermon-series-container">
@@ -15,13 +15,13 @@ const SermonSeries = () => {
                 </div>
                 <div className="sermon-series-latest-video">
                     <ReactPlayer
-                    url="https://www.youtube.com/watch?v=Lhw8c4809BQ"
+                    url="https://www.youtube.com/watch?v=pN1gw7p4Fwo"
                     controls
                     width="100%"
                     height="100%"
                     />
                     {/* <video poster={sample} controls>
-                        <source src="/videos/preaching_1.mp4" type="video/mp4" />
+                        <source src="/videos/GEEC_video.mp4" type="video/mp4" />
                         Preaching Video
                     </video> */}
                 </div>
@@ -30,4 +30,4 @@ const SermonSeries = () => {
     );
 };
 
-export default SermonSeries;
+export default AllSermonSeriesList;

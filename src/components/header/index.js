@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../images/EECToronto_logo.png';
+import Logo from '../../images/geec_logo.png';
 import HeaderTopbar from '../HeaderTopbar';
 import './style.css';
 
@@ -25,7 +25,7 @@ const Header = () => {
 
                 <nav className={`header-right ${mobileMenuOpen ? 'active' : ''}`}>
                     <ul className="nav-menu">
-                        <li><Link to="/all-events">Event</Link></li>
+                        <li><Link to="/all-events">Events</Link></li>
 
                         <li
                             onMouseEnter={() => !mobileMenuOpen && setIsOpen(true)}
@@ -38,13 +38,14 @@ const Header = () => {
                                 <ul className="dropdown">
                                     <li><Link to="/statement-of-faith">Values and Visions</Link></li>
                                     <li><Link to="/leadership">Leadership</Link></li>
-                                    <li><Link to="/volunteer">Board of Members</Link></li>
+                                    <li><Link to="/board-of-members">Board of Members</Link></li>
                                 </ul>
                             )}
                         </li>
 
-                        <li><Link to="/case">New Here</Link></li>
+                        <li><Link to="/new-here">New Here</Link></li>
                         <li><Link to="/english-service">English Service</Link></li>
+                        <li><Link to="/young-adults-amharic">Young Adults (Amharic)</Link></li>
 
                         <li
                             onMouseEnter={() => !mobileMenuOpen && setIsOpenMinistries(true)}
@@ -55,12 +56,13 @@ const Header = () => {
                             </Link>
                             {(isOpenMinistries || mobileMenuOpen) && (
                                 <ul className="dropdown">
-                                    <li><Link to="/case">Mission Garagama</Link></li>
-                                    <li><Link to="/young-adults-amharic">Young Adults - Amharic</Link></li>
-                                    <li><Link to="/young-adults-amharic-old">Young Adults - Amharic - Old</Link></li>
-                                    <li><Link to="/case-single">Kids Ministry</Link></li>
-                                    <li><Link to="/bible-study">Bible Study</Link></li>
-                                    <li><Link to="/case-single">Media Team</Link></li>
+                                    <li><Link to="/case" title="">Evangelism</Link></li>
+                                    <li><Link to="/case" title="">Youth - Amharic</Link></li>
+                                    <li><Link to="/case-single" title="">Worship Ministry</Link></li>
+                                    <li><Link to="/case-single" title="">Prayer Ministry</Link></li>
+                                    <li><Link to="/case-single" title="">Children Ministry </Link></li>
+                                    <li><Link to="/case-single" title="">Family Ministry</Link></li>
+                                    <li><Link to="/case-single" title="">Media Ministry</Link></li>
                                 </ul>
                             )}
                         </li>

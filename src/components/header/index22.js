@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Logo from '../../images/EECToronto_logo.png'
+import Logo from '../../images/geec_logo.png'
 import {Link}  from 'react-router-dom'
 import HeaderTopbar from '../HeaderTopbar'
 import MobileMenu from '../../components/MobileMenu'
@@ -36,7 +36,7 @@ const Header = () => {
                                     <li><Link to="/home3">Home style 3</Link></li>
                                 </ul> 
                             </li> */ }
-                            <li><Link to="/event" title="">Event</Link>
+                            <li><Link to="/event" title="">Events</Link>
                                 {/* <ul>
                                     <li><Link to="/event" title="">Event</Link></li>
                                     <li><Link to="/event-details" title="">Event Single</Link></li>
@@ -49,21 +49,24 @@ const Header = () => {
                             {isOpen && <ul style={{marginTop: '-40px'}}>
                                     <li><Link to="/statment-of-faith" title="">Values and Vissions</Link></li>
                                     <li><Link to="/leadership" title="">Leadership</Link></li>
-                                    <li><Link to="/volunteer" title="">Board of Members</Link></li>
+                                    <li><Link to="/board-of-members" title="">Board of Members</Link></li>
                                 </ul>}
                             </li>
-                            <li><Link to="/case" title="">New Here <></></Link></li>
+                            <li><Link to="/new-here" title="">New Here <></></Link></li>
                             <li><Link to="/english-service" title="">English Service<></></Link></li>
                             <li onMouseEnter={() => setIsOpenMinistries(true)}
                                     onMouseLeave={() => setIsOpenMinistries(false)}><Link to="/case" title=""
                                     onClick={() => setIsOpenMinistries(!isOpenMinistries)}>Ministries <i className={`fa ${isOpenMinistries ? "fa-angle-up" : "fa-angle-down"}`} style={{marginLeft: '6px'}}></i></Link>
                                 {isOpenMinistries &&  <ul style={{marginTop: '-40px'}}>
                                 <li>
-                                    <Link to="/case" title="">Mission Garagama</Link></li>
+                                    <Link to="/case" title="">Evangelism</Link></li>
                                     <li><Link to="/case" title="">Youth - Amharic</Link></li>
-                                    <li><Link to="/case-single" title="">Kids Ministry </Link></li>
-                                    <li><Link to="/case-single" title="">Bible Study</Link></li>
-                                    <li><Link to="/case-single" title="">Media Team</Link></li>
+                                    <li><Link to="/case-single" title="">Worship Ministry</Link></li>
+                                    <li><Link to="/case-single" title="">Prayer Ministry</Link></li>
+                                    <li><Link to="/case-single" title="">Children Ministry </Link></li>
+                                    <li><Link to="/case-single" title="">Family Ministry</Link></li>
+                                    <li><Link to="/case-single" title="">Media Ministry</Link></li>
+                                    
                                 </ul>}
                             </li>
                             

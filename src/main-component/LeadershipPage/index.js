@@ -8,7 +8,7 @@ const LeadershipPage = () => {
     return (
         <Fragment>
         {/* <Header /> */}
-        <PageHeader title='Leadership'/>
+        <PageHeader title='Leadership and Board of Members'/>
         <LeadersSection />
         <Footer />
         <ScrollBar/>

@@ -12,6 +12,7 @@ import WorldSection from '../../components/world'
 import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
+import HomePageEvents from '../../components/EventComponent/HomePageEvents';
 
 
 const HomePage =() => {
@@ -19,6 +20,7 @@ const HomePage =() => {
         <Fragment>
             <Header/>
             <Hero2/>
+            <HomePageEvents />
             <Mission subclass={'section-padding'}/>
             <About/>
             <CaseSlide/>

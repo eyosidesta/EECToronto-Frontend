@@ -38,7 +38,24 @@
 .more-welcome-description {
     padding-bottom: 20px;
 }
-.more-buttons button {
+.more-welcom-second-detail {
+    margin-bottom: 10px;
+}
+/* .more-buttons button {
+    color: white;
+    padding: 15px 30px;
+    border-radius: 45px;
+    box-shadow: 0 0 0 rgba(0,0,0,0.15);
+    background: #AC6634;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 0px;
+} */
+
+.more-buttons .button-link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     color: white;
     padding: 15px 30px;
     border-radius: 45px;
@@ -48,7 +65,10 @@
     font-family: sans-serif;
     border: 0px;
 }
-
+.more-buttons .button-link:hover {
+    background-color: white;
+    color: #AC6634;
+}
 .more-video {
     width: 450px;
     height: 280px;

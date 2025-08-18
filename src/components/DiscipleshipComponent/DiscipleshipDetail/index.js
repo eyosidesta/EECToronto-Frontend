@@ -31,9 +31,10 @@ const DiscipleshipDetail = () => {
 
                 <label htmlFor="choice">What have you said yes to today?</label>
                 <select id="choice" name="choice">
-                    <option value="talk">For the talk</option>
-                    <option value="skip">For skip</option>
-                    <option value="cook">For cook</option>
+                    <option value="one">Reason one</option>
+                    <option value="two">Reason Two</option>
+                    <option value="three">Reason Three</option>
+                    <option value="other">Other</option>
                 </select>
 
                 <label htmlFor="comment">Comment</label>

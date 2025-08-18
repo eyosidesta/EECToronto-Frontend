@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import img from '../../images/leadership/church_worship_18.jpg';
+import img from '../../images/leadership/Pastor_GEEC.jpg';
 import { Link } from 'react-router-dom';
 
 const LeaderDetail = (props) => {

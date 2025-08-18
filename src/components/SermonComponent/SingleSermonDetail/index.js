@@ -14,13 +14,13 @@ const SingleSermonDetail = () => {
                 </div>
                 <div className="single-sermon-detail-latest-video">
                     <ReactPlayer
-                    url="https://www.youtube.com/watch?v=Lhw8c4809BQ"
+                    url="https://www.youtube.com/watch?v=m5fGe8gwkTo"
                     controls
                     width="100%"
                     height="100%"
                     />
                     {/* <video poster={sample} controls>
-                        <source src="/videos/preaching_1.mp4" type="video/mp4" />
+                        <source src="/videos/GEEC_video.mp4" type="video/mp4" />
                         Preaching Video
                     </video> */}
                 </div>

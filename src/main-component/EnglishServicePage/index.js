@@ -8,6 +8,7 @@ import EnglishServicePhoto from '../../components/EnglishServiceComponent/Englis
 import EnglishServiceMore from '../../components/EnglishServiceComponent/EnglishServiceMore';
 import EnglishServicePagePhoto from '../../components/EnglishServiceComponent/EnglishServicePagePhoto';
 import EnglishServiceMnistry from '../../components/EnglishServiceComponent/EnglishServiceMinistry';
+import EnglishServiceEvents from '../../components/EventComponent/EnglishServiceEvents';
 
 const EnglishServicePage = () => {
     return (
@@ -16,6 +17,7 @@ const EnglishServicePage = () => {
             <WelcomePage />
             <EnglishServiceHeader />
             <EnglishServiceMore />
+            <EnglishServiceEvents />
             <EnglishServicePagePhoto />
             <EnglishServiceMnistry />
             <EnglishServicePhoto />

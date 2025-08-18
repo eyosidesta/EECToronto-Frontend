@@ -7,6 +7,9 @@ import MediumCuteSquare from '../../SharedComponents/MediumCuteSquare';
 import { Link } from 'react-router-dom';
 
 const MoreSermonSeries = () => {
+    const ClickHandler = () => { 
+        window.scrollTo(10, 0); 
+    }
     const more_series = [
         {
             image: image,
@@ -47,7 +50,7 @@ const MoreSermonSeries = () => {
                 </div>
             </div>
             <div className='more-sermon-series-button'>
-                <Link to="/all-english-sermons" className='more-sermon-series-link'>
+                <Link onClick={ClickHandler} to="/all-english-sermons" className='more-sermon-series-link'>
                     See all Sermons           
                 </Link>
             </div>

@@ -267,36 +267,88 @@
     z-index: 1;
     overflow: hidden;
 }
+.hero-style-1 {
+    position: relative;
+    overflow: hidden;
+}
 
-.hero-style-1:before {
+.hero-style-1 .slide {
+    position: relative;
+    z-index: 1; /* slide above background shapes */
+}
+
+/* White and green backgrounds behind the text */
+.hero-background {
+    position: absolute;
+    top: -90px; 
+    left: 0;
+    width: 47%;
+    height: 122%;
+    z-index: 0;
+  }
+  
+  .hero-background .white-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 0;
+  }
+  
+  .hero-background .green-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 92%;
+    background: #08cc7f;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    z-index: -1;
+  }
+  
+
+/* .hero-style-1:before {
     position: absolute;
     left: 0;
     top: -90px;
-    width: 57%;
+    width: 47%;
     height: 122%;
     background: #fff;
     content: "";
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     z-index: -1;
-}
+} */
 
-.hero-style-1:after {
+/* .hero-style-1:after {
     position: absolute;
     left: 0;
     top: 0;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background: #08cc7f;
     content: "";
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
-    z-index: -11;
+    z-index: -2;
+} */
+
+.hero-style-1 .slide-caption {
+    padding-left: -50px; 
 }
 
-.hero-style-1 {
-    background: url('../../images/event/church_event_3.jpg') no-repeat center center / cover;
+.slick-slide {
+    outline: none; 
 }
+
+/* .hero-style-1 {
+    background: url('../../images/church_images/geec_church_6.jpg') no-repeat center center / cover;
+} */
 .hero-style-3 {
     background: url('../../images/slider/img-1.jpg') no-repeat center center / cover;
 }
@@ -855,7 +907,7 @@ hero-style3
     left: 20%;
     box-shadow: 0px 2px 12.75px 2.25px rgba(51, 100, 219, 0.15);
     display: block !important;
-    top: 25px;
+    top: 20px;
 }
 
 .video-holder .wrap:before {

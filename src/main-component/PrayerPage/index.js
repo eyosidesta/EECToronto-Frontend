@@ -5,7 +5,7 @@ import PrayerDetail from '../../components/PrayerComponent/PrayerDetail';
 const PrayerPage = () => {
     return (
         <Fragment>
-            <PageHeader title="Prayer" />
+            <PageHeader title="Prayer Request" />
             <PrayerDetail />
         </Fragment>
     )

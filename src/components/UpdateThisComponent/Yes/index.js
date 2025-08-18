@@ -17,7 +17,6 @@ const YesForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Add submission logic here
   };
 
   const formStyle = {

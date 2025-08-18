@@ -1,6 +1,6 @@
 import React from 'react';
 import TextLeftImg from '../../SharedComponents/TextLeftImg';
-import image from '../../../images/leadership/church_worship_18.jpg';
+import image from '../../../images/leadership/Pastor_GEEC.jpg';
 import './style.css';
 
 

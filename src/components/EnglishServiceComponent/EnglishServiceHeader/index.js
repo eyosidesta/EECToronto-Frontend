@@ -7,10 +7,10 @@ const EnglishServiceHeader = () => {
     return (
         <div className='header-container'>
             <nav className='nav-links'>
-                <Link to="/all-events">Events</Link>
-                <Link to="/english-sermon-series">Watch Sermons</Link>
-                <Link to="/accept-christ">Accept Christ</Link>
-                <Link to="/event">Contact Us</Link>
+                <a href="#english-service-events">Events</a>
+                <a href="#english-sermon">Watch Sermons</a>
+                <a href="/accept-christ">Accept Christ</a>
+                <Link to="/contact">Contact Us</Link>
             </nav>
 
             <div className='header-content'>

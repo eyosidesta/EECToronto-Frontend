@@ -18,7 +18,7 @@ const BlogSection = (props) => {
                     <div className="col-12">
                         <div className="wpo-section-title">
                             <span>God's Mission</span>
-                            <h2>Mission Garagama</h2>
+                            <h2>Evangelism</h2>
                         </div>
                     </div>
                 </div>
