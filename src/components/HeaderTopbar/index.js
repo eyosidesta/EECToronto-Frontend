@@ -102,6 +102,7 @@ const HeaderTopbar = () => {
                         <li><Link to="/donate">Give / Tithe</Link></li>
                         <li><Link to="/accept-christ">Accept Christ</Link></li>
                         <li><Link to="/discipleship">Get Involved / Serve</Link></li>
+                        <li><Link to="/sermons">Watch Sermons</Link></li>
 
                     </ul>
                 </nav>

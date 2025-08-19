@@ -40,6 +40,7 @@ import NewHerePage from '../NewHerePage';
 import BoardOfMembersPage from '../BoardOfMembersPage';
 import AllSermons from '../AllSermons';
 import AllSermonSeries from '../AllSermonSeries';
+import EnglishEventDetailPage from '../EnglishEventDetailPage';
 
 
 const AllRoute = () => {
@@ -65,6 +66,7 @@ const AllRoute = () => {
           <Route path="leadership/:leaderId" element={<LeaderDetailPage />} />
           <Route path="all-events" element={<AllEventsPage />} />
           <Route path="all-events/:eventId" element={<EventDetailPage />} />
+          <Route path="english-events/:eventId" element={<EnglishEventDetailPage />} />
           <Route path="accept-christ" element={<AcceptChristPage />} />
           <Route path="new-here" element={< NewHerePage/>} />
           <Route path="board-of-members" element={<BoardOfMembersPage />} />

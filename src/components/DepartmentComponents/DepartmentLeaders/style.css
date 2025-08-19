@@ -1,0 +1,19 @@
+.department-leaders-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 10px;
+    margin-left: 3%;
+    margin-top: 5%;
+    padding-bottom: 10%;
+  }
+  
+  .department-leaders {
+    transition: transform 0.3s ease;
+  }
+  
+  .department-leaders:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }

@@ -1,0 +1,29 @@
+.department-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.department-card-img {
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.department-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.department-card-name {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.department-card-detail {
+    font-size: 0.8rem;
+    max-width: 230px;
+}
