@@ -46,47 +46,47 @@ const EnglishServiceEvents = () => {
         })
     }, [])
     const [englishServiceEvents, setEnglishServiceEvents] = useState([{id: 0, title: '', detail_title: '', place: '', event_image: ''}]);
-    const eventsList = [
-        {
-            id: 1, 
-            title: 'Conference on May 3rd',
-            detail_title: 'Saturday Young Adults',
-            place: '2275 Markham',
-            date: 'Jun 10, 2025',
-            time: '8:00 pm',
-            event_image: event_image,
-        },
-        {
-            id: 2, 
-            title: 'Young Adults',
-            detail_title: 'Saturday Young Adults',
-            place: '2275 Markham',
-            date: 'Mar 10, 2025',
-            time: '8:00 pm',
-            event_image: event_image2,
-        },
-        {
-            id: 3, 
-            title: 'Young Adults',
-            detail_title: 'Saturday Young Adults',
-            place: '2275 Markham',
-            date: 'Mar 10, 2025',
-            time: '8:00 pm',
-            event_image: event_image2,
-        },
-        {
-            id: 3, 
-            title: 'Young Adults',
-            detail_title: 'Saturday Young Adults',
-            place: '2275 Markham',
-            date: 'Mar 10, 2025',
-            time: '8:00 pm',
-            event_image: event_image2,
-        },
-    ]
-    useEffect(() => {
-        setEnglishServiceEvents(eventsList);
-    }, [])
+    // const eventsList = [
+    //     {
+    //         id: 1, 
+    //         title: 'Conference on May 3rd',
+    //         detail_title: 'Saturday Young Adults',
+    //         place: '2275 Markham',
+    //         date: 'Jun 10, 2025',
+    //         time: '8:00 pm',
+    //         event_image: event_image,
+    //     },
+    //     {
+    //         id: 2, 
+    //         title: 'Young Adults',
+    //         detail_title: 'Saturday Young Adults',
+    //         place: '2275 Markham',
+    //         date: 'Mar 10, 2025',
+    //         time: '8:00 pm',
+    //         event_image: event_image2,
+    //     },
+    //     {
+    //         id: 3, 
+    //         title: 'Young Adults',
+    //         detail_title: 'Saturday Young Adults',
+    //         place: '2275 Markham',
+    //         date: 'Mar 10, 2025',
+    //         time: '8:00 pm',
+    //         event_image: event_image2,
+    //     },
+    //     {
+    //         id: 3, 
+    //         title: 'Young Adults',
+    //         detail_title: 'Saturday Young Adults',
+    //         place: '2275 Markham',
+    //         date: 'Mar 10, 2025',
+    //         time: '8:00 pm',
+    //         event_image: event_image2,
+    //     },
+    // ]
+    // useEffect(() => {
+    //     setEnglishServiceEvents(eventsList);
+    // }, [])
     return (
         <div className='young-adults-event-container' id="english-service-events">
             <h2>Upcoming Events</h2>

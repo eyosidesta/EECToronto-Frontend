@@ -13,7 +13,7 @@ const DepartmentLeaders = () => {
       <div className="department-leaders-container">
 
 
-    <Link to="1" className='department-leaders'>
+    <Link to="/prayer-department" className='department-leaders'>
     <DepartmentCard image={image} name='Pastor Fitsum' detail='Grace Ethiopian Evangelical Church Pastor / Pastor of Young Adults'/>
     </Link>
     <Link to="1" className='department-leaders'>

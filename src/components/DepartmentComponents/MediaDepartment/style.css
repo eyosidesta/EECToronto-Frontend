@@ -1,0 +1,106 @@
+.media-department-content-wrapper {
+    width: 90%;
+    padding: 5% 10%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+.media-department-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.media-department-custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.media-department-custom-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.media-department-custom-form input,
+.media-department-custom-form select,
+.media-department-custom-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.media-department-custom-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.media-department-custom-form button:hover {
+    background-color: #0056b3;
+}
+
+.media-deparment-slide .slick-prev,
+.media-deparment-slide .slick-next {
+    background-color: rgba(247, 195, 63, 0.52);
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.media-deparment-slide {
+    margin-bottom: 20px;
+}
+
+.media-deparment-slide .slick-prev:hover,
+.media-deparment-slide .slick-next:hover {
+    background-color: rgba(247, 195, 63);
+}
+
+.media-deparment-slide .slick-prev {
+    left: -1000px;
+}
+
+.media-deparment-slide .slick-next {
+    right: -1000px;
+}
+
+.media-deparment-slide:hover .slick-prev {
+    left: 25px;
+}
+
+.media-deparment-slide:hover .slick-next {
+    right: 25px;
+}
+
+.media-deparment-slide .slick-prev:before {
+    font-family: "themify";
+    content: "\e629";
+    opacity: 1;
+}
+
+.media-deparment-slide .slick-next:before {
+    font-family: "themify";
+    content: "\e628";
+    opacity: 1;
+}
+
+.media-option-label {
+    font-weight: 100;
+}

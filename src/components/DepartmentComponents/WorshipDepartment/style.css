@@ -1,0 +1,121 @@
+.worship-department-content-wrapper {
+    /* width: 80%; */
+    padding: 5% 10%;
+    /* padding: 5% 10%; */
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+.worship-department-title {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    /* background-color: #213640; */
+    padding: 2%;
+    /* color: white; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.worship-department-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.worship-department-custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.worship-department-custom-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.worship-department-custom-form input,
+.worship-department-custom-form select,
+.worship-department-custom-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.worship-department-custom-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.worship-department-custom-form button:hover {
+    background-color: #0056b3;
+}
+
+.worship-deparment-slide .slick-prev,
+.worship-deparment-slide .slick-next {
+    background-color: rgba(247, 195, 63, 0.52);
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.worship-deparment-slide {
+    margin-bottom: 20px;
+    border-radius: 100px;
+
+}
+
+.worship-deparment-slide .slick-prev:hover,
+.worship-deparment-slide .slick-next:hover {
+    background-color: rgba(247, 195, 63);
+}
+
+.worship-deparment-slide .slick-prev {
+    left: -1000px;
+}
+
+.worship-deparment-slide .slick-next {
+    right: -1000px;
+}
+
+.worship-deparment-slide:hover .slick-prev {
+    left: 25px;
+}
+
+.worship-deparment-slide:hover .slick-next {
+    right: 25px;
+}
+
+.worship-deparment-slide .slick-prev:before {
+    font-family: "themify";
+    content: "\e629";
+    opacity: 1;
+}
+
+.worship-deparment-slide .slick-next:before {
+    font-family: "themify";
+    content: "\e628";
+    opacity: 1;
+}
+
+.worship-option-label {
+    font-weight: 100;
+}

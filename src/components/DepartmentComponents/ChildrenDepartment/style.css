@@ -1,0 +1,106 @@
+.children-department-content-wrapper {
+    width: 90%;
+    padding: 5% 10%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+.children-department-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.children-department-custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.children-department-custom-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.children-department-custom-form input,
+.children-department-custom-form select,
+.children-department-custom-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.children-department-custom-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.children-department-custom-form button:hover {
+    background-color: #0056b3;
+}
+
+.children-deparment-slide .slick-prev,
+.children-deparment-slide .slick-next {
+    background-color: rgba(247, 195, 63, 0.52);
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.children-deparment-slide {
+    margin-bottom: 20px;
+}
+
+.children-deparment-slide .slick-prev:hover,
+.children-deparment-slide .slick-next:hover {
+    background-color: rgba(247, 195, 63);
+}
+
+.children-deparment-slide .slick-prev {
+    left: -1000px;
+}
+
+.children-deparment-slide .slick-next {
+    right: -1000px;
+}
+
+.children-deparment-slide:hover .slick-prev {
+    left: 25px;
+}
+
+.children-deparment-slide:hover .slick-next {
+    right: 25px;
+}
+
+.children-deparment-slide .slick-prev:before {
+    font-children: "themify";
+    content: "\e629";
+    opacity: 1;
+}
+
+.children-deparment-slide .slick-next:before {
+    font-children: "themify";
+    content: "\e628";
+    opacity: 1;
+}
+
+.children-option-label {
+    font-weight: 100;
+}

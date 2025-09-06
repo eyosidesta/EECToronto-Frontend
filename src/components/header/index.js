@@ -58,11 +58,11 @@ const Header = () => {
                                 <ul className="dropdown">
                                     <li><Link to="/case" title="">Evangelism</Link></li>
                                     <li><Link to="/case" title="">Youth - Amharic</Link></li>
-                                    <li><Link to="/case-single" title="">Worship Ministry</Link></li>
-                                    <li><Link to="/case-single" title="">Prayer Ministry</Link></li>
-                                    <li><Link to="/case-single" title="">Children Ministry </Link></li>
-                                    <li><Link to="/case-single" title="">Family Ministry</Link></li>
-                                    <li><Link to="/case-single" title="">Media Ministry</Link></li>
+                                    <li><Link to="/worship-department" title="">Worship Ministry</Link></li>
+                                    <li><Link to="/prayer-department" title="">Prayer Ministry</Link></li>
+                                    <li><Link to="/children-department" title="">Children Ministry </Link></li>
+                                    <li><Link to="/family-department" title="">Family Ministry</Link></li>
+                                    <li><Link to="/media-department" title="">Media Ministry</Link></li>
                                 </ul>
                             )}
                         </li>

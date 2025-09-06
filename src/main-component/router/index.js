@@ -33,7 +33,6 @@ import AllEventsPage from '../AllEventsPage';
 import EventDetailPage from '../EventDetailPage';
 import AcceptChristPage from '../AcceptChristPage';
 import PrayerPage from '../PrayerPage';
-import DiscipleshipPage from '../DiscipleshipPage';
 import StatementOfFaithPage from '../StatementOfFaithPage';
 import BibleStudyPage from '../BibleStudyPage';
 import NewHerePage from '../NewHerePage';
@@ -41,6 +40,17 @@ import BoardOfMembersPage from '../BoardOfMembersPage';
 import AllSermons from '../AllSermons';
 import AllSermonSeries from '../AllSermonSeries';
 import EnglishEventDetailPage from '../EnglishEventDetailPage';
+import PrayerDepartmentPage from '../PrayerDepartmentPage';
+import WorshipDepartmentPage from '../WorshipDepartmentPage';
+import FamilyDepartmentPage from '../FamilyDepartmentPage';
+import ChildrenDepartmentPage from '../ChildrenDepartmentPage';
+import MediaDepartmentPage from '../MediaDepartmentPage';
+import ServePage from '../ServePage';
+import Dashboard from '../../components/admin/Dashboard';
+import AdminHome from '../../components/admin/AdminHome';
+import AdminEventPage from '../Admin/AdminEventPage';
+import AdminEnglishEventPage from '../Admin/AdminEnglishEventPage';
+import AdminEnglishEventDetailPage from '../Admin/AdminEnglishEventDetailPage';
 
 
 const AllRoute = () => {
@@ -50,6 +60,7 @@ const AllRoute = () => {
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Homepage />} />
+          <Route path="admin" element={<Dashboard />} />
           <Route path='home2' element={<Homepage2 />} />
           <Route path='home' element={<Homepage />} />
           <Route path='home3' element={<Homepage3 />} />
@@ -70,10 +81,20 @@ const AllRoute = () => {
           <Route path="accept-christ" element={<AcceptChristPage />} />
           <Route path="new-here" element={< NewHerePage/>} />
           <Route path="board-of-members" element={<BoardOfMembersPage />} />
-          <Route path="prayer" element={<PrayerPage />} />
-          <Route path="discipleship" element={<DiscipleshipPage />} />
+          <Route path="prayer-request" element={<PrayerPage />} />
+          <Route path="serve" element={<ServePage />} />
           <Route path="statement-of-faith" element={<StatementOfFaithPage />} />
           <Route path="bible-study" element={<BibleStudyPage />} />
+          <Route path="prayer-department" element={<PrayerDepartmentPage />} />
+          <Route path="worship-department" element={<WorshipDepartmentPage />} />
+          <Route path="family-department" element={<FamilyDepartmentPage />} />
+          <Route path="children-department" element={<ChildrenDepartmentPage />} />
+          <Route path="media-department" element={<MediaDepartmentPage />} />
+
+          <Route path="admin/events" element={<AdminEventPage />} />
+          <Route path="admin/english-events" element={<AdminEnglishEventPage />} />
+          <Route path="admin/english-events/:eventId" element={<AdminEnglishEventDetailPage />} />
+
 
           <Route path='case' element={<CasePage />} />
           <Route path='case-single' element={<CaseSinglePage />} />

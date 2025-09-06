@@ -1,10 +1,53 @@
 import React from 'react';
 import './style.css';
+import Slider from 'react-slick';
+import image1 from "../../../images/church_images/geec_church_6.jpg";
+import image2 from "../../../images/church_images/geec_church_7.jpg";
+import image3 from "../../../images/church_images/geec_church_8.jpg";
+import image4 from "../../../images/church_images/geec_church_2.jpg";
+import image5 from "../../../images/church_images/geec_church_3.jpg";
 
-const PrayerDetail = () => {
+const PrayerDepartment = () => {
+    const images = [image1, image2, image3, image4, image5];
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true,
+        arrows: true,
+        pauseOnHover: false,
+    };
+
     return (
-        <div className="content-wrapper">
-            <div className="lorem-text">
+        <div className="prayer-department-content-wrapper">
+            <section className="prayer-deparment-slide" style={{ overflow: "visible", position: "relative" }}>
+
+                <Slider {...settings}>
+                    {images.map((img, index) => (
+                        <div key={index}>
+                            <div
+                                className="prayer-department-slide"
+                                style={{
+                                    backgroundImage: `url(${img})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    height: `400px`,
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    position: 'relative',
+                                }}
+                            >
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+            </section>
+            <div className="prayer-department-text">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, sem nec congue mattis, sapien
                     odio sodales justo, in fermentum nulla nunc in ligula. Integer et massa vitae nunc eleifend lacinia.
@@ -33,27 +76,19 @@ const PrayerDetail = () => {
                     turpis, sit amet ultrices nunc. In id sapien sed sem pulvinar facilisis.
                 </p>
             </div>
-            <h1>Do you have a prayer Request?</h1>
+            <h1>Want to join Prayer Team? Fill out the form</h1>
 
-            <form className="custom-form">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" />
+            <form className="prayer-department-custom-form">
+                <label htmlFor="name">Name*</label>
+                <input type="text" id="name" name="name" placeholder="first and last name" />
 
-                <label htmlFor="phone">Phone</label>
+                <label htmlFor="phone">Phone*</label>
                 <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
 
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email*</label>
                 <input type="email" id="email" name="email" placeholder="Your email" />
 
-                <label htmlFor="choice">For What can We Pray for you Today?</label>
-                <select id="choice" name="choice">
-                    <option value="talk">For Spritual Growth</option>
-                    <option value="skip">For Your Family</option>
-                    <option value="cook">For your blessings</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label htmlFor="comment">Comment</label>
+                <label htmlFor="comment">Comment <span className="prayer-option-label">(optional)</span></label>
                 <textarea id="comment" name="comment" rows="5" placeholder="Your comment here..." />
 
                 <button type="submit">Submit</button>
@@ -62,4 +97,4 @@ const PrayerDetail = () => {
     );
 };
 
-export default PrayerDetail;
+export default PrayerDepartment;

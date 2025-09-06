@@ -98,10 +98,10 @@ const HeaderTopbar = () => {
             </div>
                 <nav className='top-nav-bars'>
                     <ul className='top-list-items'>
-                        <li><Link to="/prayer">Prayer Request</Link></li>
+                        <li><Link to="/prayer-request">Prayer Request</Link></li>
                         <li><Link to="/donate">Give / Tithe</Link></li>
                         <li><Link to="/accept-christ">Accept Christ</Link></li>
-                        <li><Link to="/discipleship">Get Involved / Serve</Link></li>
+                        <li><Link to="/serve">Get Involved / Serve</Link></li>
                         <li><Link to="/sermons">Watch Sermons</Link></li>
 
                     </ul>

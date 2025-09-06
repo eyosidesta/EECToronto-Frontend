@@ -7,7 +7,7 @@
 
 .photo-title-img img {
     width: 100%;
-    height: 100%;
+    height: 550px;
     object-fit: cover;
     display: block;
 }
@@ -22,4 +22,10 @@
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media(max-width: 860px) {
+    .photo-title-title {
+        font-size: 2rem;
+    }
 }

@@ -7,7 +7,7 @@ const EnglishServicePhoto = () => {
     return (
         <div className="page1-container">
             <div className='img2-container'>
-                <img src={background_img} alt="Toronto" />
+                <img src={background_img} alt="Vancouver City" />
                 
                 <div className='text1-content'>
                     <div className='title'>Welcome to English Service</div>

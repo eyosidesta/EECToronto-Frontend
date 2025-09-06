@@ -1,0 +1,91 @@
+.serve-content-wrapper {
+    background-color: #e6e6e6;
+}
+.serve-header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.serve-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+.serve-description {
+    margin-bottom: 40px;
+    margin: 0 5%;
+    /* font-size: ; */
+}
+.lorem-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.serve-custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2% 15%;
+}
+
+.serve-custom-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.serve-custom-form input,
+.serve-custom-form select,
+.serve-custom-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.serve-custom-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.serve-custom-form button:hover {
+    background-color: #0056b3;
+}
+.service-cards-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top: 4%
+}
+.service-not-sure {
+    font-size: 2rem;
+    margin: 4% 15%;
+    /* margin-top: 4% */
+}
+
+@media(max-width: 860px) {
+ .serve-title {
+    font-size: 1.5rem;
+    margin: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4%;
+}   
+}
