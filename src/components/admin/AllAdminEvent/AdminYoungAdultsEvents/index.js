@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import AdminEventCard from '../AdminEventCard';
 import './style.css';
 
-const AdminEnglishEvents = () => {
+const AdminYoungAdultsEvents = () => {
 
     const [isLoading, setIsLoading] = useState(false);
-    const [allEnglishEvents, setAllEnglishEvents] = useState([]);
+    const [allYoungAdultsEvents, setAllYoungAdultsEvents] = useState([]);
 
     useEffect(() => {
         setIsLoading(true);
-        fetch("http://localhost:8080/api/events/type/english").then(response => {
+        fetch("http://localhost:8080/api/events/type/amharic").then(response => {
             response.json().then(eventList => {
                 const formattedEvents = eventList.map(event => {
                     const eventDate = new Date(event.eventDate);
@@ -30,7 +30,7 @@ const AdminEnglishEvents = () => {
                         formattedTime
                     };
                 })
-                setAllEnglishEvents(formattedEvents);
+                setAllYoungAdultsEvents(formattedEvents);
                 setIsLoading(false);
             }).catch(error => {
                 setIsLoading(false);
@@ -39,15 +39,15 @@ const AdminEnglishEvents = () => {
         })
     }, [])
     return (
-        <div className='admin-english-event-container'>
+        <div className='admin-young-adults-event-container'>
         <h2>Upcoming Events</h2>
-        <div className='admin-english-event-content'>
+        <div className='admin-young-adults-event-content'>
 
-            {allEnglishEvents.map((events, map) => {
+            {allYoungAdultsEvents.map((events, map) => {
                 return (
-                    <div className='admin-english-first-event-card'>
+                    <div className='admin-young-adults-event-card'>
                         <AdminEventCard event_image={events.eventImageUrl}
-                        link_address={`/admin/english-events/${events.id}`}
+                        link_address={`/admin/young-adults-events/${events.id}`}
                         title={events.eventTitle}
                         date={events.formattedDate}
                         place={events.event_place}
@@ -62,4 +62,4 @@ const AdminEnglishEvents = () => {
     )
 }
 
-export default AdminEnglishEvents;
+export default AdminYoungAdultsEvents;

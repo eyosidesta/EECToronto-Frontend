@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import EventCard from '../../SharedComponents/EventCard';
-import event_image from '../../../images/event/church_event_4.jpg';
-import event_image2 from '../../../images/event/church_event_2.jpg';
+import AdminEventCard from '../AdminEventCard';
 import './style.css';
 
-const EnglishServiceEvents = () => {
+const AdminAllEvents = () => {
+
     const [isLoading, setIsLoading] = useState(false);
     const [allEnglishEvents, setAllEnglishEvents] = useState([]);
 
     useEffect(() => {
         setIsLoading(true);
-        fetch("http://localhost:8080/api/events").then(response => {
+        fetch("http://localhost:8080/api/events/type/english").then(response => {
             response.json().then(eventList => {
                 const formattedEvents = eventList.map(event => {
                     const eventDate = new Date(event.eventDate);
@@ -39,29 +38,28 @@ const EnglishServiceEvents = () => {
             })
         })
     }, [])
-
     return (
-        <div className='young-adults-event-container' id="english-service-events">
-            <h2>Upcoming Events</h2>
-            <div className='young-adults-event-content'>
+        <div className='admin-english-event-container'>
+        <h2>Upcoming Events</h2>
+        <div className='admin-english-event-content'>
 
-                {allEnglishEvents.map((events, map) => {
-                    return (
-                        <div className='yae-first-event-card'>
-                            <EventCard event_image={events.eventImageUrl}
-                            link_address={`/english-events/${events.id}`}
-                            title={events.eventTitle}
-                            date={events.formattedDate}
-                            place={events.event_place}
-                            detail_title={events.eventDescription}
-                            time={events.formattedTime}
-                            />
-                        </div>
-                    )
-                })}
-            </div>
+            {allEnglishEvents.map((events, map) => {
+                return (
+                    <div className='admin-english-first-event-card'>
+                        <AdminEventCard event_image={events.eventImageUrl}
+                        link_address={`/admin/english-events/${events.id}`}
+                        title={events.eventTitle}
+                        date={events.formattedDate}
+                        place={events.event_place}
+                        detail_title={events.eventDescription}
+                        time={events.formattedTime}
+                        />
+                    </div>
+                )
+            })}
         </div>
+    </div>
     )
 }
 
-export default EnglishServiceEvents;
+export default AdminAllEvents;

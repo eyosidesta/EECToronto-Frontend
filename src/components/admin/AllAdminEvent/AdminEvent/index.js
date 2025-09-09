@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./style.css";
-import AdminLayout from "../AdminLayout";
+import AdminLayout from "../../AdminLayout";
 import { Link } from "react-router-dom";
 
 const AdminEvent = () => {
-  const [activeTab, setActiveTab] = useState("upcoming"); // default is Add Event
+  const [activeTab, setActiveTab] = useState("upcoming");
 
   return (
     <AdminLayout title="Event">
@@ -12,25 +12,30 @@ const AdminEvent = () => {
         <h1 className="events-title">Events</h1>
         <div className="admin-events-card-lists">
           <Link to="/admin/english-events">
-          <div className="admin-events-card event-card-1">
-            <p>English Events</p>
-            <h2>12</h2>
-            <p>7 days events: 3</p>
+            <div className="admin-events-card event-card-1">
+              <p>English Events</p>
+              <h2>12</h2>
+              <p>7 days events: 3</p>
             </div>
-            </Link>
-          <div className="admin-events-card event-card-2"><p>Young Adults Amharic</p>
-            <h2>12</h2>
-            <p>7 days events: 3</p>
+          </Link>
+          <Link to="/admin/young-adults-events">
+            <div className="admin-events-card event-card-2"><p>Young Adults Amharic</p>
+              <h2>12</h2>
+              <p>7 days events: 3</p>
             </div>
-            
-          <div className="admin-events-card event-card-3"><p>All Events </p>
-            <h2>12</h2>
-            <p>7 days events: 3</p>
+          </Link>
+          <Link to="/admin/all-events">
+            <div className="admin-events-card event-card-3"><p>All Events </p>
+              <h2>12</h2>
+              <p>7 days events: 3</p>
             </div>
-          <div className="admin-events-card event-card-4"><p>Upcoming Events</p>
-            <h2>12</h2>
-            <p>30 days events: 3</p>
+          </Link>
+          <Link to="/admin/all-events">
+            <div className="admin-events-card event-card-4"><p>Upcoming Events</p>
+              <h2>12</h2>
+              <p>30 days events: 3</p>
             </div>
+          </Link>
         </div>
 
         {/* Tabs */}

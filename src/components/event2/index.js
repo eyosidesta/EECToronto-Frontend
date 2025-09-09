@@ -40,19 +40,19 @@ const EventSection2 = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid" key={index}>
                     <div className="wpo-event-item">
                         <div className="wpo-event-img">
-                            <img src={event.event_imageUrl ? event.event_imageUrl : pr1} alt=""/>
+                            <img src={event.eventImageUrl ? event.eventImageUrl : pr1} alt=""/>
                             <div className={thumbClass}>
                                 <span>25</span>
                                 <span>NOV</span>
                             </div>
                         </div>
                         <div className="wpo-event-text">
-                            <h2>{event.event_title}</h2>
+                            <h2>{event.eventTitle}</h2>
                             <ul>
                                 <li><i className="fa fa-clock-o" aria-hidden="true"></i>8.00 - 5.00</li>
                                 <li><i className="fi flaticon-pin"></i>Newyork City</li>
                             </ul>
-                            <p>{event.event_description}</p>
+                            <p>{event.eventDescription}</p>
                             <Link to="/event-details">Learn More...</Link>
                         </div>
                     </div>

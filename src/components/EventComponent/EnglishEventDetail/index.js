@@ -14,7 +14,7 @@ const EnglishEventDetail = () => {
             fetch(`http://localhost:8080/api/events/${eventId}`)
             .then(response => response.json())
             .then(eventData => {
-              const eventDate = parseISO(eventData.event_date);
+              const eventDate = parseISO(eventData.eventDate);
               
               const formattedDate = format(eventDate, 'MMMM d, yyyy');
               const formattedTime = format(eventDate, 'hh:mm a'); 
@@ -34,7 +34,7 @@ const EnglishEventDetail = () => {
     return (
         <div className="english-event-detail-new-container">
             <div className="english-event-detail-card">
-                <h2 className="english-event-title">{event.event_title}</h2>
+                <h2 className="english-event-title">{event.eventTitle}</h2>
 
                 <ul className="english-event-info-list">
                     <li><i className="fa fa-calendar" aria-hidden="true"></i>{event.formattedDate}</li>
@@ -43,10 +43,10 @@ const EnglishEventDetail = () => {
                 </ul>
 
                 <div className="english-event-image">
-                    <img src={event.event_imageUrl} alt="Young Adults Program" />
+                    <img src={event.eventImageUrl} alt="Young Adults Program" />
                 </div>
                 <p className="english-event-description">
-                   {event.event_description}
+                   {event.eventDescription}
                 </p>
             </div>
         </div>

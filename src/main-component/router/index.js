@@ -51,6 +51,9 @@ import AdminHome from '../../components/admin/AdminHome';
 import AdminEventPage from '../Admin/AdminEventPage';
 import AdminEnglishEventPage from '../Admin/AdminEnglishEventPage';
 import AdminEnglishEventDetailPage from '../Admin/AdminEnglishEventDetailPage';
+import AdminYoungAdultsEventsPage from '../Admin/AdminYoungAdultsEventsPage';
+import AdminYoungAdultsEventDetailPage from '../Admin/AdminYoungAdultsEventDetailPage';
+import AdminAllEventPage from '../Admin/AdminAllEventPage';
 
 
 const AllRoute = () => {
@@ -94,6 +97,9 @@ const AllRoute = () => {
           <Route path="admin/events" element={<AdminEventPage />} />
           <Route path="admin/english-events" element={<AdminEnglishEventPage />} />
           <Route path="admin/english-events/:eventId" element={<AdminEnglishEventDetailPage />} />
+          <Route path="admin/young-adults-events" element={<AdminYoungAdultsEventsPage />} />
+          <Route path="admin/young-adults-events/:eventId" element={<AdminYoungAdultsEventDetailPage />} />
+          <Route path="admin/all-events" element={<AdminAllEventPage />} />
 
 
           <Route path='case' element={<CasePage />} />

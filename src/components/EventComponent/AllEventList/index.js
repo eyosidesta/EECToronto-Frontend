@@ -11,7 +11,7 @@ const AllEventList = () => {
         fetch("http://localhost:8080/api/events").then(response => {
             response.json().then(eventList => {
                 const formattedEvents = eventList.map(event => {
-                    const eventDate = new Date(event.event_date);
+                    const eventDate = new Date(event.eventDate);
 
                     const formattedDate = eventDate.toLocaleDateString('en-US', {
                         year: 'numeric',
@@ -43,12 +43,12 @@ const AllEventList = () => {
                 {allEvents.map((events, map) => {
                     return (
                         <div className='individual-all-event-list'>
-                            <EventCard event_image={events.event_imageUrl}
+                            <EventCard event_image={events.eventImageUrl}
                             link_address={`${events.id}`}
-                            title={events.event_title}
+                            title={events.eventTitle}
                             date={events.formattedDate}
                             place={events.event_place}
-                            detail_title={events.event_description}
+                            detail_title={events.eventDescription}
                             time={events.formattedTime}
                             />
                         </div>

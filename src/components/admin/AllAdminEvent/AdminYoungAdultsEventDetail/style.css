@@ -1,11 +1,11 @@
-.admin-english-event-detail-new-container {
+.admin-young-adults-event-detail-new-container {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
     background-color: #f8f9fa;
 }
 
-.admin-english-event-detail-card {
+.admin-young-adults-event-detail-card {
     max-width: 700px;
     background-color: #fff;
     overflow-y: auto;
@@ -14,20 +14,20 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.admin-english-event-title {
+.admin-young-adults-event-title {
     font-size: 28px;
     font-weight: 600;
     color: #333;
     margin-bottom: 20px;
 }
 
-.admin-english-event-info-list {
+.admin-young-adults-event-info-list {
     list-style: none;
     padding: 0;
     margin: 0 0 20px 0;
 }
 
-.admin-english-event-info-list li {
+.admin-young-adults-event-info-list li {
     margin-bottom: 10px;
     font-size: 16px;
     color: #555;
@@ -35,12 +35,12 @@
     align-items: center;
 }
 
-.admin-english-event-info-list i {
+.admin-young-adults-event-info-list i {
     margin-right: 10px;
     color: #007BFF;
 }
 
-.admin-english-event-image img {
+.admin-young-adults-event-image img {
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -48,20 +48,20 @@
     object-fit: cover;
 }
 
-.admin-english-event-description {
+.admin-young-adults-event-description {
     font-size: 16px;
     line-height: 1.6;
     color: #444;
 }
 
-.admin-english-detail-leftarrow {
+.admin-young-adults-detail-leftarrwo {
     cursor: pointer;
 }
-.aeed-title-edit {
+.ayaed-title-edit {
     display: flex;
     justify-content: space-between;
 }
-.aeed-edit-btn {
+.ayaed-edit-btn {
     border-radius: 10px;
     width: 80px;
     height: 40px;
@@ -71,18 +71,18 @@
     transition: transform 0.3s ease;
 }
 
-.aeed-edit-btn:hover {
+.ayaed-edit-btn:hover {
     transform: scale(1.18);
 }
 
-.aeed-edit-container {
+.ayaed-edit-container {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
     background-color: #f8f9fa;
 }
 
-.aeed-edit-card {
+.ayaed-edit-card {
     width: 800px;
     background-color: #fff;
     overflow-y: auto;
@@ -90,12 +90,12 @@
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
-.aeed-edit-dlt-btn {
+.ayaed-edit-dlt-btn {
     display: flex;
     gap: 20px;
 }
 
-.aeed-dlt-btn {
+.ayaed-dlt-btn {
     border-radius: 10px;
     width: 80px;
     height: 40px;

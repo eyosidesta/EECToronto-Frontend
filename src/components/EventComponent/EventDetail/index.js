@@ -16,7 +16,7 @@ const EventDetail = () => {
             .then(response => response.json())
             .then(eventData => {
                 console.log("response: " + eventData)
-              const eventDate = parseISO(eventData.event_date); // Parse the ISO date string
+              const eventDate = parseISO(eventData.eventDate);
               
               const formattedDate = format(eventDate, 'MMMM d, yyyy');
               const formattedTime = format(eventDate, 'hh:mm a'); 
@@ -36,7 +36,7 @@ const EventDetail = () => {
     return (
         <div className="event-detail-new-container">
             <div className="event-detail-card">
-                <h2 className="event-title">{event.event_title}</h2>
+                <h2 className="event-title">{event.eventTitle}</h2>
 
                 <ul className="event-info-list">
                     <li><i className="fa fa-calendar" aria-hidden="true"></i>{event.formattedDate}</li>
@@ -45,10 +45,10 @@ const EventDetail = () => {
                 </ul>
 
                 <div className="event-image">
-                    <img src={event.event_imageUrl} alt="Young Adults Program" />
+                    <img src={event.eventImageUrl} alt="Young Adults Program" />
                 </div>
                 <p className="event-description">
-                   {event.event_description}
+                   {event.eventDescription}
                 </p>
             </div>
         </div>

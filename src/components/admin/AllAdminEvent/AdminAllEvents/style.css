@@ -1,0 +1,48 @@
+.admin-all-event-container {
+    background-color: #F5F5F5;
+}
+.admin-all-event-container h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+.admin-all-event-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.admin-all-first-event-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.admin-all-first-event-card:hover {
+    transform: scale(1.05);
+}
+.admin-all-second-event-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.admin-all-second-event-card:hover {
+    transform: scale(1.05);
+}
+@media(max-width: 1199px) {
+    .admin-all-event-container {
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+}
+@media(max-width: 991px) {
+    .admin-all-event-container {
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    .admin-all-event-container {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
