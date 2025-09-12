@@ -1,5 +1,4 @@
 import React from 'react';
-import sample from '../../../images/event/church_event_1.jpg';
 import ReactPlayer from 'react-player';
 import './style.css';
 
@@ -20,10 +19,6 @@ const EnglishSermonSeriesList = () => {
                     width="100%"
                     height="100%"
                     />
-                    {/* <video poster={sample} controls>
-                        <source src="/videos/GEEC_video.mp4" type="video/mp4" />
-                        Preaching Video
-                    </video> */}
                 </div>
             </div>
         </div>

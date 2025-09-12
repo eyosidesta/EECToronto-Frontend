@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './style.css';
-import image from '../../../images/event/church_event_3.jpg';
 import { useParams } from 'react-router-dom';
 import { format, parseISO } from 'date-fns';
 

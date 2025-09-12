@@ -54,6 +54,7 @@ import AdminEnglishEventDetailPage from '../Admin/AdminEnglishEventDetailPage';
 import AdminYoungAdultsEventsPage from '../Admin/AdminYoungAdultsEventsPage';
 import AdminYoungAdultsEventDetailPage from '../Admin/AdminYoungAdultsEventDetailPage';
 import AdminAllEventPage from '../Admin/AdminAllEventPage';
+import AdminSermonHomePage from '../Admin/AdminSermonHomePage';
 
 
 const AllRoute = () => {
@@ -74,7 +75,7 @@ const AllRoute = () => {
           <Route path="english-service" element={<EnglishServicePage />} />
           <Route path="english-sermon-series" element={<EnglishSermonSeries />} />
           <Route path="all-english-sermons" element={<AllEnglishSermons />} />
-          <Route path="sermon/*" element={<SingleSermon />} />
+          <Route path="sermon/:sermonId" element={<SingleSermon />} />
           <Route path="young-adults-amharic" element={<YoungAdultsPage />} />
           <Route path="young-adults-amharic-old" element={<YoungAdultsPageOld />} />
           <Route path="leadership/:leaderId" element={<LeaderDetailPage />} />
@@ -100,6 +101,7 @@ const AllRoute = () => {
           <Route path="admin/young-adults-events" element={<AdminYoungAdultsEventsPage />} />
           <Route path="admin/young-adults-events/:eventId" element={<AdminYoungAdultsEventDetailPage />} />
           <Route path="admin/all-events" element={<AdminAllEventPage />} />
+          <Route path="admin/sermons" element={<AdminSermonHomePage />}/>
 
 
           <Route path='case' element={<CasePage />} />

@@ -1,0 +1,38 @@
+.si-container {
+    width: 200px;
+    height: 120px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.si-container:hover {
+    transform: scale(1.05);
+}
+.si-title-arrow {
+    display: flex;
+    justify-content: space-between;
+
+}
+.si-title {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.si-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.si-value {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+.si-description {
+    font-size: 0.9rem;
+    color: #4a4646;
+    font-weight: lighter;
+}

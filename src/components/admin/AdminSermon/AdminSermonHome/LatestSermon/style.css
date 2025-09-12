@@ -1,0 +1,12 @@
+.als-container {
+    width: 500px;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media(max-width: 991px) {
+    .als-container {
+    width: 300px;
+    }
+}

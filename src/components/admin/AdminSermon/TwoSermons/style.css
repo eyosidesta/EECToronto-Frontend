@@ -1,0 +1,7 @@
+.ts-container {
+    border-radius: 5px;
+    background-color: #FFEFE7;
+    width: 300px;
+    aspect-ratio: 16/9;
+    padding: 20px;
+}

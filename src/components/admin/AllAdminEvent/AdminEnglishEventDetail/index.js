@@ -125,8 +125,8 @@ const AdminEnglishEventDetail = () => {
       eventDate: eventDate_time.toISOString()
     };
 
-    fetch(`http://localhost:8080/api/events/${eventId}`, {
-      method: 'PUT',
+    fetch(`http://localhost:8080/api/events`, {
+      method: 'POST',
       headers: {
         "Content-Type": "application/json",
       },

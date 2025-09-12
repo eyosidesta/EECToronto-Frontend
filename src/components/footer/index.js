@@ -95,7 +95,7 @@ const Footer = (props) =>{
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <p className="copyright">&copy; {year} Ethiopian Evangelical Church Toronto</p>
+                        <p className="copyright">&copy; {year} Grace Ethiopian Evangelical Church Vancouver</p>
                     </div>
                 </div>
             </div>
