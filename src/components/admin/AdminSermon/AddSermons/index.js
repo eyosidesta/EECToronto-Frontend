@@ -16,7 +16,7 @@ const AddSermons = () => {
 
     useEffect(() => {
         const sermonId = 5;
-        fetch(`http://localhost:8080/api/sermons`)
+        fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/sermons`)
           .then(response => response.json())
           .then(sermonData1 => {
             console.log("sermon Data:  ", sermonData1);
@@ -65,7 +65,7 @@ const AddSermons = () => {
         
 
         const sermId = 4;
-        fetch(`http://localhost:8080/api/sermons`, {
+        fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/sermons`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
