@@ -5,12 +5,7 @@ import event_image2 from '../../../images/event/church_event_2.jpg';
 import './style.css';
 
 const YoungAdultsEvents = () => {
-    // const handleFirstEventClick = () => {
-    //     window.location.href="http://localhost:3036/event"
-    // }
-    // const handleSecondEventClick = () => {
-
-    // }
+    
     const [allAmharicEvents, setAllAmharicEvents] = useState([{id: 0, title: '', detail_title: '', place: '', event_image: ''}]);
     const eventsList = [
         {

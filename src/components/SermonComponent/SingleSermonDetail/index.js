@@ -11,7 +11,7 @@
     
 //     useEffect(() => {
 //         setIsLoading(true);
-//             fetch(`http://localhost:8080/api/sermons/${sermonId}`)
+//             fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/sermons/${sermonId}`)
 //             .then(response => response.json())
 //             .then(sermonData => {
 //                 console.log("response: " + sermonData)
@@ -70,7 +70,7 @@ const SingleSermonDetail = () => {
     setIsLoading(true);
     setError(null);
 
-    fetch(`http://localhost:8080/api/sermons/${sermonId}`, {
+    fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/sermons/${sermonId}`, {
       headers: { 'Cache-Control': 'no-cache' }
     })
       .then((res) => {

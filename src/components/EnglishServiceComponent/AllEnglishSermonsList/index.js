@@ -23,7 +23,7 @@ const AllEnglishSermonsList = () => {
         return null; // fallback if no video ID
     }
     useEffect(() => {
-        fetch(`http://localhost:8080/api/sermons`)
+        fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/sermons`)
           .then(response => response.json())
           .then(sermonData => {
             

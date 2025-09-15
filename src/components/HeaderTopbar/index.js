@@ -93,7 +93,7 @@ const HeaderTopbar = () => {
     return(	
         <div className='header-topbar'>
             <div className='live-in'>
-                <div className='live-text'>LIVE IN</div>
+            <Link to="/live" className='live-text'><div> LIVE IN </div></Link>
                 <div className='live-time'>{`${timeLeft.days} : ${pad(timeLeft.hours)} : ${pad(timeLeft.minutes)} : ${pad(timeLeft.seconds)}`}</div>
             </div>
                 <nav className='top-nav-bars'>

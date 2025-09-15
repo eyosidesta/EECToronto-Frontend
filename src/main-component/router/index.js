@@ -55,6 +55,7 @@ import AdminYoungAdultsEventsPage from '../Admin/AdminYoungAdultsEventsPage';
 import AdminYoungAdultsEventDetailPage from '../Admin/AdminYoungAdultsEventDetailPage';
 import AdminAllEventPage from '../Admin/AdminAllEventPage';
 import AdminSermonHomePage from '../Admin/AdminSermonHomePage';
+import LiveStreamPage from '../LiveStreamPage';
 
 
 const AllRoute = () => {
@@ -94,6 +95,7 @@ const AllRoute = () => {
           <Route path="family-department" element={<FamilyDepartmentPage />} />
           <Route path="children-department" element={<ChildrenDepartmentPage />} />
           <Route path="media-department" element={<MediaDepartmentPage />} />
+          <Route path="live" element={<LiveStreamPage />} />
 
           <Route path="admin/events" element={<AdminEventPage />} />
           <Route path="admin/english-events" element={<AdminEnglishEventPage />} />

@@ -9,7 +9,7 @@ const AdminEnglishEvents = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch("http://localhost:8080/api/events/type/english").then(response => {
+        fetch("https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/events/type/english").then(response => {
             response.json().then(eventList => {
                 const formattedEvents = eventList.map(event => {
                     const eventDate = new Date(event.eventDate);

@@ -54,7 +54,7 @@ const AdminYoungAdultsEventDetail = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`http://localhost:8080/api/events/${eventId}`)
+        fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/events/${eventId}`)
             .then(response => response.json())
             .then(eventData => {
                 const eventDate = parseISO(eventData.eventDate);
@@ -125,7 +125,7 @@ const AdminYoungAdultsEventDetail = () => {
             eventDate: eventDate_time.toISOString()
         };
 
-        fetch(`http://localhost:8080/api/events/${eventId}`, {
+        fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/events/${eventId}`, {
             method: 'PUT',
             headers: {
                 "Content-Type": "application/json",

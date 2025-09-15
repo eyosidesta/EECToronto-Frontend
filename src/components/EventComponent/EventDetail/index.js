@@ -11,7 +11,7 @@ const EventDetail = () => {
     
     useEffect(() => {
         setIsLoading(true);
-            fetch(`http://localhost:8080/api/events/${eventId}`)
+            fetch(`https://geec-vancouver5rc-app-6tq4j.ondigitalocean.app/api/events/${eventId}`)
             .then(response => response.json())
             .then(eventData => {
                 console.log("response: " + eventData)
